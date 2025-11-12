@@ -1,14 +1,18 @@
 <script setup lang="ts">
-import { useColorMode } from "@vueuse/core";
-const mode = useColorMode();
-
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-vue-next";
+
+const handleScroll = () => {
+  const element = document.getElementById('contato');
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
 </script>
 
 <template>
-  <section class="container">
+  <section class="container" id="home">
     <div
       class="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32"
     >
@@ -18,32 +22,31 @@ import { ArrowRight } from "lucide-vue-next";
           class="text-sm py-2"
         >
           <span class="mr-2 text-primary">
-            <Badge>New</Badge>
+            <Badge>Novo</Badge>
           </span>
-          <span> Design is out now! </span>
+          <span> Atendimento 100% online </span>
         </Badge>
 
         <div
           class="max-w-screen-md mx-auto text-center text-5xl md:text-6xl font-bold"
+          style="font-family: 'Playfair Display', serif;"
         >
           <h1>
-            Experience the
+            Alforriase —
             <span
-              class="text-transparent bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text"
-              >Shadcn/Vue
-            </span>
-            landing page
+              class="text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text"
+              >Clareza que liberta</span
+            >
           </h1>
         </div>
 
         <p class="max-w-screen-sm mx-auto text-xl text-muted-foreground">
-          We're more than just a tool, we're a community of passionate creators.
-          Get access to exclusive resources, tutorials, and support.
+          Astrologia aplicada + acompanhamento estratégico para mulheres que querem viver com mais direção e liberdade.
         </p>
 
         <div class="space-y-4 md:space-y-0 md:space-x-4">
-          <Button class="w-5/6 md:w-1/4 font-bold group/arrow">
-            Get Started
+          <Button class="w-5/6 md:w-1/4 font-bold group/arrow" @click="handleScroll">
+            Agendar conversa
             <ArrowRight
               class="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform"
             />
@@ -55,9 +58,10 @@ import { ArrowRight } from "lucide-vue-next";
             class="w-5/6 md:w-1/4 font-bold"
           >
             <a
-              href="https://github.com/leoMirandaa/shadcn-vue-landing-page.git"
+              href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma conversa com a Camila."
               target="_blank"
-              >Github respository</a
+              rel="noopener noreferrer"
+              >WhatsApp</a
             >
           </Button>
         </div>
@@ -71,10 +75,9 @@ import { ArrowRight } from "lucide-vue-next";
 
         <img
           class="w-full md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-t-primary/30 img-border-animation"
-          :src="
-            mode == 'light' ? 'hero-image-light.jpg' : 'hero-image-dark.jpg'
-          "
-          alt="dashboard using shadcn-vue"
+          src="https://images.unsplash.com/photo-1494783367193-149034c05e41?w=1200&h=600&fit=crop"
+          alt="Alforriase - Astrologia aplicada para mulheres"
+          loading="lazy"
         />
 
         <!-- gradient effect img -->

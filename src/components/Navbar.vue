@@ -3,7 +3,7 @@ import { ref } from "vue";
 
 import { useColorMode } from "@vueuse/core";
 const mode = useColorMode();
-mode.value = "dark";
+mode.value = "light";
 
 import {
   NavigationMenu,
@@ -25,8 +25,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 
-import { ChevronsDown, Menu } from "lucide-vue-next";
-import GithubIcon from "@/icons/GithubIcon.vue";
+import { Sparkles, Menu } from "lucide-vue-next";
 import ToggleTheme from "./ToggleTheme.vue";
 
 interface RouteProps {
@@ -41,37 +40,41 @@ interface FeatureProps {
 
 const routeList: RouteProps[] = [
   {
-    href: "#testimonials",
-    label: "Testimonials",
+    href: "#alforriase",
+    label: "Sobre",
   },
   {
-    href: "#team",
-    label: "Team",
+    href: "#camila",
+    label: "Camila",
   },
   {
-    href: "#contact",
-    label: "Contact",
+    href: "#experiencias",
+    label: "Experiências",
   },
   {
-    href: "#faq",
-    label: "FAQ",
+    href: "#depoimentos",
+    label: "Depoimentos",
+  },
+  {
+    href: "#contato",
+    label: "Contato",
   },
 ];
 
 const featureList: FeatureProps[] = [
   {
-    title: "Showcase Your Value ",
-    description: "Highlight how your product solves user problems.",
+    title: "Jornada Solar",
+    description: "4 encontros ao longo do ano para transformar seus objetivos em um plano prático.",
   },
   {
-    title: "Build Trust",
+    title: "Leitura de Mapa Astral",
     description:
-      "Leverages social proof elements to establish trust and credibility.",
+      "Mergulho para compreender talentos, desafios e potenciais; plano de ação prático.",
   },
   {
-    title: "Capture Leads",
+    title: "Astro Express",
     description:
-      "Make your lead capture form visually appealing and strategically.",
+      "Atendimento rápido para dúvidas pontuais; clareza imediata para agir.",
   },
 ];
 
@@ -87,14 +90,15 @@ const isOpen = ref<boolean>(false);
     }"
   >
     <a
-      href="/"
+      href="#home"
       class="font-bold text-lg flex items-center"
+      style="font-family: 'Playfair Display', serif;"
     >
-      <ChevronsDown
-        class="bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white"
+      <Sparkles
+        class="bg-gradient-to-tr from-primary via-primary/70 to-secondary rounded-lg w-9 h-9 mr-2 border text-white"
       />
-      ShadcnVue</a
-    >
+      Alforriase
+    </a>
     <!-- Mobile -->
     <div class="flex items-center lg:hidden">
       <Sheet v-model:open="isOpen">
@@ -111,15 +115,15 @@ const isOpen = ref<boolean>(false);
         >
           <div>
             <SheetHeader class="mb-4 ml-4">
-              <SheetTitle class="flex items-center">
+              <SheetTitle class="flex items-center" style="font-family: 'Playfair Display', serif;">
                 <a
-                  href="/"
+                  href="#home"
                   class="flex items-center"
                 >
-                  <ChevronsDown
-                    class="bg-gradient-to-tr from-primary/70 via-primary to-primary/70 rounded-lg size-9 mr-2 border text-white"
+                  <Sparkles
+                    class="bg-gradient-to-tr from-primary/70 via-primary to-secondary/70 rounded-lg size-9 mr-2 border text-white"
                   />
-                  ShadcnVue
+                  Alforriase
                 </a>
               </SheetTitle>
             </SheetHeader>
@@ -156,13 +160,13 @@ const isOpen = ref<boolean>(false);
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger class="bg-card text-base">
-            Features
+            Serviços
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <div class="grid w-[600px] grid-cols-2 gap-5 p-4">
               <img
-                src="https://www.radix-vue.com/logo.svg"
-                alt="Beach"
+                src="https://images.unsplash.com/photo-1494783367193-149034c05e41?w=400&h=400&fit=crop"
+                alt="Alforriase"
                 class="h-full w-full rounded-md object-cover"
               />
               <ul class="flex flex-col gap-2">
@@ -201,21 +205,18 @@ const isOpen = ref<boolean>(false);
       </NavigationMenuList>
     </NavigationMenu>
 
-    <div class="hidden lg:flex">
+    <div class="hidden lg:flex gap-2">
       <ToggleTheme />
 
       <Button
         as-child
         size="sm"
-        variant="ghost"
-        aria-label="View on GitHub"
+        class="font-bold"
       >
         <a
-          aria-label="View on GitHub"
-          href="https://github.com/leoMirandaa/shadcn-vue-landing-page.git"
-          target="_blank"
+          href="#contato"
         >
-          <GithubIcon class="size-5" />
+          Agendar conversa
         </a>
       </Button>
     </div>

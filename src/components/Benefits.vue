@@ -2,12 +2,10 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 import {
-  Sparkle,
-  Tag,
-  Paintbrush,
-  Blocks,
-  LineChart,
-  Wallet,
+  Sparkles,
+  Compass,
+  Heart,
+  Zap,
 } from "lucide-vue-next";
 
 interface BenefitsProps {
@@ -18,65 +16,66 @@ interface BenefitsProps {
 
 const benefitList: BenefitsProps[] = [
   {
-    icon: "blocks",
-    title: "Build Brand Trust",
+    icon: "sparkles",
+    title: "Astrologia Prática",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Não fazemos previsões, construímos planos de ação. A astrologia é uma ferramenta para compreender seus talentos, desafios e potenciais.",
   },
   {
-    icon: "lineChart",
-    title: "More Leads",
+    icon: "compass",
+    title: "Planejamento Estratégico",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
+      "Transformamos descobertas astrológicas em passos concretos e alcançáveis para sua vida.",
   },
   {
-    icon: "wallet",
-    title: "Higher Conversions",
+    icon: "heart",
+    title: "Método Humanizado",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
+      "Camila ajuda mulheres a priorizarem a si mesmas com leveza e responsabilidade.",
   },
   {
-    icon: "sparkle",
-    title: "Test Marketing Ideas",
+    icon: "zap",
+    title: "Liberdade e Clareza",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Alforriase nasceu do desejo de ajudar mulheres a saírem do automático e viverem com liberdade.",
   },
 ];
 
 const iconMap: Record<
   string,
-  | typeof Sparkle
-  | typeof Tag
-  | typeof Paintbrush
-  | typeof Blocks
-  | typeof LineChart
-  | typeof Wallet
+  | typeof Sparkles
+  | typeof Compass
+  | typeof Heart
+  | typeof Zap
 > = {
-  sparkle: Sparkle,
-  tag: Tag,
-  paintbrush: Paintbrush,
-  blocks: Blocks,
-  lineChart: LineChart,
-  wallet: Wallet,
+  sparkles: Sparkles,
+  compass: Compass,
+  heart: Heart,
+  zap: Zap,
 };
 </script>
 
 <template>
   <section
-    id="benefits"
+    id="alforriase"
     class="container py-24 sm:py-32"
   >
     <div class="grid lg:grid-cols-2 place-items-center lg:gap-24">
       <div>
-        <h2 class="text-lg text-primary mb-2 tracking-wider">Benefits</h2>
+        <h2 class="text-lg text-primary mb-2 tracking-wider" style="font-family: 'Playfair Display', serif;">Sobre</h2>
 
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">
-          Your Shortcut to Success
+        <h2 class="text-3xl md:text-4xl font-bold mb-4" style="font-family: 'Playfair Display', serif;">
+          A História da Alforriase
         </h2>
         <p class="text-xl text-muted-foreground mb-8">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non ducimus
-          reprehenderit architecto rerum similique facere odit deleniti
-          necessitatibus quo quae.
+          Alforriase nasceu do desejo de ajudar mulheres a saírem do automático e viverem com liberdade. 
+          Aqui a astrologia é ferramenta prática: não fazemos previsões, construímos planos de ação.
+        </p>
+        <p class="text-lg text-muted-foreground">
+          <strong>Nome:</strong> Alforriase — dar-se liberdade.
+        </p>
+        <p class="text-lg text-muted-foreground">
+          <strong>Método:</strong> Astrologia aplicada + acompanhamento estratégico.
         </p>
       </div>
 

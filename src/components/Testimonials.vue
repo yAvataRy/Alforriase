@@ -22,76 +22,68 @@ import { Star } from "lucide-vue-next";
 interface ReviewProps {
   image: string;
   name: string;
-  userName: string;
+  result: string;
   comment: string;
   rating: number;
 }
 
 const reviewList: ReviewProps[] = [
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe",
-    userName: "Product Manager",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop",
+    name: "Juliana M.",
+    result: "Planejamento mais focado",
     comment:
-      "Wow Vue + Shadcn-Vue is awesome!. This template lets me change colors, fonts and images to match my brand identity. ",
+      "A Jornada Solar mudou minha forma de planejar o ano — me sinto mais focada e menos ansiosa.",
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "Sophia Collins",
-    userName: "Cybersecurity Analyst",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop",
+    name: "Marina S.",
+    result: "Autoconhecimento profundo",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. ",
-    rating: 4.8,
+      "A leitura do mapa astral foi reveladora. Camila ajudou a compreender meus talentos e desafios de forma prática.",
+    rating: 5.0,
   },
 
   {
-    image: "https://github.com/shadcn.png",
-    name: "Adam Johnson",
-    userName: "Chief Technology Officer",
+    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&auto=format&fit=crop",
+    name: "Ana P.",
+    result: "Clareza para agir",
     comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "O Astro Express foi perfeito para resolver uma dúvida que me travava. Saí da sessão com clareza e ação.",
     rating: 4.9,
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "Ethan Parker",
-    userName: "Data Scientist",
+    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop",
+    name: "Beatriz L.",
+    result: "Liberdade e leveza",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "Camila me ajudou a priorizar a mim mesma com responsabilidade. Sinto-me mais livre e leve.",
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "Ava Mitchell",
-    userName: "IT Project Manager",
+    image: "https://images.unsplash.com/photo-1517841905240-1c28a8a0ceb8?q=80&w=400&auto=format&fit=crop",
+    name: "Fernanda T.",
+    result: "Transformação pessoal",
     comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud incididunt consectetur adipiscing elit.",
+      "Depois de três meses com Camila, minha vida mudou completamente. Estou vivendo com mais propósito.",
     rating: 5.0,
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "Isabella Reed",
-    userName: "DevOps Engineer",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    rating: 4.9,
   },
 ];
 </script>
 
 <template>
   <section
-    id="testimonials"
+    id="depoimentos"
     class="container py-24 sm:py-32"
   >
     <div class="text-center mb-8">
-      <h2 class="text-lg text-primary text-center mb-2 tracking-wider">
-        Testimonials
+      <h2 class="text-lg text-primary text-center mb-2 tracking-wider" style="font-family: 'Playfair Display', serif;">
+        Depoimentos
       </h2>
 
-      <h2 class="text-3xl md:text-4xl text-center font-bold mb-4">
-        Hear What Our 1000+ Clients Say
+      <h2 class="text-3xl md:text-4xl text-center font-bold mb-4" style="font-family: 'Playfair Display', serif;">
+        O que nossas clientes dizem
       </h2>
     </div>
 
@@ -107,7 +99,7 @@ const reviewList: ReviewProps[] = [
           :key="review.name"
           class="md:basis-1/2 lg:basis-1/3"
         >
-          <Card class="bg-muted/50 dark:bg-card">
+          <Card class="bg-muted/50 dark:bg-card h-full">
             <CardContent class="pt-6 pb-0">
               <div class="flex gap-1 pb-6">
                 <Star class="size-4 fill-primary text-primary" />
@@ -117,22 +109,22 @@ const reviewList: ReviewProps[] = [
                 <Star class="size-4 fill-primary text-primary" />
               </div>
 
-              "{{ review.comment }}"
+              <p class="italic">"{{ review.comment }}"</p>
             </CardContent>
 
             <CardHeader>
               <div class="flex flex-row items-center gap-4">
                 <Avatar>
                   <AvatarImage
-                    src="https://www.radix-vue.com/logo.svg"
-                    alt="@radix-vue"
+                    :src="review.image"
+                    :alt="review.name"
                   />
-                  <AvatarFallback>SV</AvatarFallback>
+                  <AvatarFallback>{{ review.name.charAt(0) }}</AvatarFallback>
                 </Avatar>
 
                 <div class="flex flex-col">
                   <CardTitle class="text-lg">{{ review.name }}</CardTitle>
-                  <CardDescription>{{ review.userName }}</CardDescription>
+                  <CardDescription>{{ review.result }}</CardDescription>
                 </div>
               </div>
             </CardHeader>

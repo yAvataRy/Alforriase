@@ -7,15 +7,13 @@ import {
   CardFooter,
 } from "@/components/ui/card";
 
-import LinkedInIcon from "@/icons/LinkedInIcon.vue";
-import GithubIcon from "@/icons/GithubIcon.vue";
-import XIcon from "@/icons/XIcon.vue";
+import InstagramIcon from "@/icons/XIcon.vue";
 
 interface TeamProps {
   imageUrl: string;
-  firstName: string;
-  lastName: string;
-  positions: string[];
+  name: string;
+  title: string;
+  description: string;
   socialNetworks: SocialNetworkProps[];
 }
 
@@ -26,141 +24,16 @@ interface SocialNetworkProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl: "https://i.pravatar.cc/250?img=58",
-    firstName: "Leo",
-    lastName: "Miranda",
-    positions: ["Vue Fronted Developer", "Creator Of This Website"],
-    socialNetworks: [
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-      {
-        name: "Github",
-        url: "https://github.com/leoMirandaa",
-      },
-      {
-        name: "X",
-        url: "https://x.com/leo_mirand4",
-      },
-    ],
-  },
-  {
     imageUrl:
-      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    firstName: "Elizabeth",
-    lastName: "Moore",
-    positions: ["UI/UX Designer"],
+      "https://images.unsplash.com/photo-1494783367193-149034c05e41?q=80&w=1200&auto=format&fit=crop",
+    name: "Camila",
+    title: "Fundadora da Alforriase",
+    description:
+      "Há 3 anos trabalhando com astrologia prática, Camila desenvolveu um método que une mapa astral e planejamento estratégico para transformar descobertas em passos concretos. Comunicadora clara e prática, ajuda mulheres a priorizarem a si mesmas com leveza e responsabilidade.",
     socialNetworks: [
       {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-      {
-        name: "X",
-        url: "https://x.com/leo_mirand4",
-      },
-    ],
-  },
-  {
-    imageUrl:
-      "https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    firstName: "David",
-    lastName: "Diaz",
-    positions: ["Machine Learning Engineer", "TensorFlow Tinkerer"],
-    socialNetworks: [
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-      {
-        name: "Github",
-        url: "https://github.com/leoMirandaa",
-      },
-    ],
-  },
-  {
-    imageUrl:
-      "https://images.unsplash.com/photo-1573497161161-c3e73707e25c?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    firstName: "Sarah",
-    lastName: "Robinson",
-    positions: ["Cloud Native Developer", " Kubernetes Orchestrator"],
-    socialNetworks: [
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-      {
-        name: "Github",
-        url: "https://github.com/leoMirandaa",
-      },
-      {
-        name: "X",
-        url: "https://x.com/leo_mirand4",
-      },
-    ],
-  },
-  {
-    imageUrl:
-      "https://images.unsplash.com/photo-1616805765352-beedbad46b2a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    firstName: "Michael",
-    lastName: "Holland",
-    positions: ["DevOps Engineer", "CI/CD Pipeline Mastermind"],
-    socialNetworks: [
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-    ],
-  },
-  {
-    imageUrl:
-      "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    firstName: "Zoe",
-    lastName: "Garcia",
-    positions: ["JavaScript Evangelist", "Deno Champion"],
-    socialNetworks: [
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-      {
-        name: "Github",
-        url: "https://github.com/leoMirandaa",
-      },
-    ],
-  },
-  {
-    imageUrl:
-      "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    firstName: "Evan",
-    lastName: "James",
-    positions: ["Backend Developer"],
-    socialNetworks: [
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-      {
-        name: "Github",
-        url: "https://github.com/leoMirandaa",
-      },
-      {
-        name: "X",
-        url: "https://x.com/leo_mirand4",
-      },
-    ],
-  },
-  {
-    imageUrl:
-      "https://images.unsplash.com/photo-1573497019236-17f8177b81e8?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1573497019236-17f8177b81e8?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    firstName: "Pam",
-    lastName: "Taylor",
-    positions: ["Fullstack developer", "UX Researcher"],
-    socialNetworks: [
-      {
-        name: "X",
-        url: "https://x.com/leo_mirand4",
+        name: "Instagram",
+        url: "https://instagram.com/camisdaalforriase",
       },
     ],
   },
@@ -168,40 +41,36 @@ const teamList: TeamProps[] = [
 
 const socialIcon = (socialName: string) => {
   switch (socialName) {
-    case "LinkedIn":
-      return LinkedInIcon;
-
-    case "Github":
-      return GithubIcon;
-
-    case "X":
-      return XIcon;
+    case "Instagram":
+      return InstagramIcon;
+    default:
+      return InstagramIcon;
   }
 };
 </script>
 
 <template>
   <section
-    id="team"
+    id="camila"
     class="container lg:w-[75%] py-24 sm:py-32"
   >
     <div class="text-center mb-8">
-      <h2 class="text-lg text-primary text-center mb-2 tracking-wider">Team</h2>
+      <h2 class="text-lg text-primary text-center mb-2 tracking-wider" style="font-family: 'Playfair Display', serif;">Fundadora</h2>
 
-      <h2 class="text-3xl md:text-4xl text-center font-bold">
-        The Company Dream Team
+      <h2 class="text-3xl md:text-4xl text-center font-bold" style="font-family: 'Playfair Display', serif;">
+        Conheça Camila
       </h2>
     </div>
 
     <div
-      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+      class="grid grid-cols-1 gap-8 max-w-2xl mx-auto"
     >
       <Card
         v-for="{
           imageUrl,
-          firstName,
-          lastName,
-          positions,
+          name,
+          title,
+          description,
           socialNetworks,
         } in teamList"
         :key="imageUrl"
@@ -211,37 +80,31 @@ const socialIcon = (socialName: string) => {
           <div class="h-full overflow-hidden">
             <img
               :src="imageUrl"
-              alt=""
+              :alt="name"
               class="w-full aspect-square object-cover saturate-0 transition-all duration-200 ease-linear size-full group-hover/hoverimg:saturate-100 group-hover/hoverimg:scale-[1.01]"
             />
           </div>
           <CardTitle class="py-6 pb-4 px-6"
-            >{{ firstName }}
-            <span class="text-primary">{{ lastName }}</span>
+            >{{ name }}
+            <span class="text-primary">{{ title }}</span>
           </CardTitle>
         </CardHeader>
 
-        <CardContent
-          v-for="(position, index) in positions"
-          :key="index"
-          :class="{
-            'pb-0 text-muted-foreground ': true,
-            'pb-4': index === positions.length - 1,
-          }"
-        >
-          {{ position }}<span v-if="index < positions.length - 1">,</span>
+        <CardContent class="text-muted-foreground pb-4">
+          {{ description }}
         </CardContent>
 
         <CardFooter class="space-x-4 mt-auto">
           <a
-            v-for="{ name, url } in socialNetworks"
-            key="name"
+            v-for="{ name: socialName, url } in socialNetworks"
+            :key="socialName"
             :href="url"
             target="_blank"
+            rel="noopener noreferrer"
             class="hover:opacity-80 transition-all"
-            :aria-label="`Visit our ${name} page`"
+            :aria-label="`Visite nosso ${socialName}`"
           >
-            <component :is="socialIcon(name)" />
+            <component :is="socialIcon(socialName)" />
           </a>
         </CardFooter>
       </Card>
