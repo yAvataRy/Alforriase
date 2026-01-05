@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted } from 'vue';
+import { onMounted } from "vue";
 
 onMounted(() => {
   // Carregar script do Elfsight Instagram Feed
@@ -9,10 +9,10 @@ onMounted(() => {
   // 3. Conecte sua conta do Instagram (@camisdaalforriase)
   // 4. Personalize o widget (cores, layout, etc)
   // 5. Copie o código do widget e substitua o ID abaixo
-  
+
   if (!document.querySelector('script[src*="elfsight"]')) {
-    const script = document.createElement('script');
-    script.src = 'https://static.elfsight.com/platform/platform.js';
+    const script = document.createElement("script");
+    script.src = "https://static.elfsight.com/platform/platform.js";
     script.async = true;
     script.defer = true;
     document.body.appendChild(script);
@@ -21,16 +21,32 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="container py-24 sm:py-32" style="background: linear-gradient(135deg, #d1c5ba 0%, #f5f0eb 50%, #d1c5ba 100%);">
+  <section
+    class="container py-24 sm:py-32"
+    style="
+      background: linear-gradient(
+        135deg,
+        #d1c5ba 0%,
+        #f5f0eb 50%,
+        #d1c5ba 100%
+      );
+    "
+  >
     <div class="text-center mb-8">
-      <h2 class="text-lg text-center mb-2 tracking-wider" style="font-family: 'Playfair Display', serif; color: #722a24;">
+      <h2
+        class="text-lg text-center mb-2 tracking-wider"
+        style="font-family: 'Playfair Display', serif; color: #722a24"
+      >
         Instagram
       </h2>
-      <h2 class="text-3xl md:text-4xl text-center font-bold mb-4" style="font-family: 'Playfair Display', serif; color: #722a24;">
+      <h2
+        class="text-3xl md:text-4xl text-center font-bold mb-4"
+        style="font-family: 'Playfair Display', serif; color: #722a24"
+      >
         Siga @camisdaalforriase
       </h2>
     </div>
-    
+
     <div class="flex justify-center">
       <div class="w-full max-w-5xl">
         <!-- Widget do Elfsight Instagram Feed -->
@@ -47,9 +63,9 @@ onMounted(() => {
           O código do Elfsight geralmente tem este formato:
           <div class="elfsight-app-XXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"></div>
         -->
-        
+
         <!-- Substitua este div pelo código do seu widget Elfsight -->
-        <div class="elfsight-app-placeholder w-full rounded-lg shadow-lg overflow-hidden" style="background: rgba(255, 255, 255, 0.95); min-height: 500px; padding: 2rem; display: flex; align-items: center; justify-content: center;">
+        <!-- <div class="elfsight-app-placeholder w-full rounded-lg shadow-lg overflow-hidden" style="background: rgba(255, 255, 255, 0.95); min-height: 500px; padding: 2rem; display: flex; align-items: center; justify-content: center;">
           <div class="text-center">
             <p class="text-lg mb-4" style="color: #722a24; font-family: 'Playfair Display', serif;">
               Configure o feed do Instagram
@@ -67,8 +83,13 @@ onMounted(() => {
               Configurar Widget do Instagram →
             </a>
           </div>
-        </div>
-        
+        </div> -->
+        <!-- Elfsight Instagram Feed | Camíla | Astrologia pra sua carreira -->
+        <div
+          class="elfsight-app-72a9f93d-5292-4c8d-ba69-8880fcd152cd"
+          data-elfsight-app-lazy
+        ></div>
+
         <!-- 
           ALTERNATIVA: Se preferir usar outro serviço, você pode usar:
           
@@ -80,14 +101,17 @@ onMounted(() => {
         -->
       </div>
     </div>
-    
+
     <div class="text-center mt-8">
-      <a 
-        href="https://www.instagram.com/camisdaalforriase/" 
-        target="_blank" 
+      <a
+        href="https://www.instagram.com/camisdaalforriase/"
+        target="_blank"
         rel="noopener noreferrer"
         class="inline-block px-6 py-3 rounded-lg font-semibold transition-all hover:scale-105"
-        style="background: linear-gradient(135deg, #722a24 0%, #8b3d35 100%); color: #d1c5ba;"
+        style="
+          background: linear-gradient(135deg, #722a24 0%, #8b3d35 100%);
+          color: #d1c5ba;
+        "
       >
         Ver mais no Instagram →
       </a>
@@ -101,4 +125,3 @@ onMounted(() => {
   min-height: 500px;
 }
 </style>
-

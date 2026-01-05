@@ -53,16 +53,18 @@ import Separator from "./ui/separator/Separator.vue";
               href="#experiencias"
               class="opacity-60 hover:opacity-100"
             >
-              Serviços
+              Experiências
             </a>
           </div>
         </div>
 
         <div class="flex flex-col gap-2">
-          <h3 class="font-bold text-lg">Serviços</h3>
+          <h3 class="font-bold text-lg">Experiências</h3>
           <div>
             <a
-              href="#experiencias"
+              href="https://payfast.greenn.com.br/84569"
+              target="_blank"
+              rel="noopener noreferrer"
               class="opacity-60 hover:opacity-100"
             >
               Jornada Solar
@@ -71,19 +73,34 @@ import Separator from "./ui/separator/Separator.vue";
 
           <div>
             <a
-              href="#experiencias"
+              href="https://payfast.greenn.com.br/84552"
+              target="_blank"
+              rel="noopener noreferrer"
               class="opacity-60 hover:opacity-100"
             >
-              Mapa Astral
+              Leitura de Mapa Astral
             </a>
           </div>
 
           <div>
             <a
-              href="#experiencias"
+              href="https://payfast.greenn.com.br/84572/offer/xAcMsw"
+              target="_blank"
+              rel="noopener noreferrer"
               class="opacity-60 hover:opacity-100"
             >
               Astro Express
+            </a>
+          </div>
+
+          <div>
+            <a
+              href="https://payfast.greenn.com.br/116808/offer/Cmw5Od"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="opacity-60 hover:opacity-100"
+            >
+              Jornada Solar Pocket
             </a>
           </div>
         </div>
