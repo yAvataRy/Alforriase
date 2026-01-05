@@ -36,7 +36,7 @@ const successMessage = ref<boolean>(false);
 
 const handleSubmit = async () => {
   const { name, email, subject, message } = contactForm;
-  
+
   if (!name || !email || !message) {
     invalidInputForm.value = true;
     return;
@@ -51,10 +51,13 @@ const handleSubmit = async () => {
     formData.append("message", message);
     formData.append("_captcha", "false");
 
-    const response = await fetch("https://formsubmit.co/ajax/seu_email@alforriase.com", {
-      method: "POST",
-      body: formData,
-    });
+    const response = await fetch(
+      "https://formsubmit.co/ajax/seu_email@alforriase.com",
+      {
+        method: "POST",
+        body: formData,
+      }
+    );
 
     if (response.ok) {
       successMessage.value = true;
@@ -62,7 +65,7 @@ const handleSubmit = async () => {
       contactForm.email = "";
       contactForm.subject = "Jornada Solar";
       contactForm.message = "";
-      
+
       setTimeout(() => {
         successMessage.value = false;
       }, 5000);
@@ -78,20 +81,35 @@ const handleSubmit = async () => {
   <section
     id="contato"
     class="container py-24 sm:py-32"
-    style="background: linear-gradient(135deg, #d1c5ba 0%, #f5f0eb 50%, #ffffff 100%);"
+    style="
+      background: linear-gradient(
+        135deg,
+        #d1c5ba 0%,
+        #f5f0eb 50%,
+        #ffffff 100%
+      );
+    "
   >
     <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div>
         <div class="mb-4">
-          <h2 class="text-lg text-primary mb-2 tracking-wider" style="font-family: 'Playfair Display', serif;">Contato</h2>
-
-          <h2 class="text-3xl md:text-4xl font-bold" style="font-family: 'Playfair Display', serif;">
+          <h2
+            class="text-3xl md:text-4xl font-bold"
+            style="
+              background: linear-gradient(135deg, #722a24 0%, #8b3d35 100%);
+              -webkit-background-clip: text;
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+              color: transparent;
+              font-family: 'Playfair Display', serif;
+            "
+          >
             Vamos conversar?
           </h2>
         </div>
         <p class="mb-8 text-muted-foreground lg:w-5/6">
-          Pronta para transformar seu ciclo? Agende um diagnóstico rápido e descubra o próximo passo da sua jornada.
-          Atendimento 100% online.
+          Pronta para transformar seu ciclo? Agende um diagnóstico rápido e
+          descubra o próximo passo da sua jornada.
         </p>
 
         <div class="flex flex-col gap-4">
@@ -102,8 +120,11 @@ const handleSubmit = async () => {
             </div>
 
             <div>
-              <a href="mailto:contato@alforriase.com" class="text-primary hover:underline">
-                contato@alforriase.com
+              <a
+                href="mailto:alforriase@outlook.com"
+                class="text-primary hover:underline"
+              >
+                alforriase@outlook.com
               </a>
             </div>
           </div>
@@ -115,8 +136,13 @@ const handleSubmit = async () => {
             </div>
 
             <div>
-              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
-                +55 (11) 9 9999-9999
+              <a
+                href="https://api.whatsapp.com/send?phone=5511951366861&text=Ol%C3%A1,%20vim%20pelo%20site."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-primary hover:underline"
+              >
+                +55 (11) 95136-6861
               </a>
             </div>
           </div>
@@ -134,8 +160,15 @@ const handleSubmit = async () => {
           </div>
 
           <div class="mt-6">
-            <p class="text-sm text-muted-foreground mb-3">Siga-nos nas redes:</p>
-            <a href="https://instagram.com/camisdaalforriase" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
+            <p class="text-sm text-muted-foreground mb-3">
+              Siga-nos nas redes:
+            </p>
+            <a
+              href="https://instagram.com/camisdaalforriase"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary hover:underline"
+            >
               @camisdaalforriase
             </a>
           </div>
@@ -143,15 +176,15 @@ const handleSubmit = async () => {
       </div>
 
       <!-- form -->
-      <Card class="border-2" style="background: linear-gradient(135deg, #ffffff 0%, #f5f0eb 100%);">
+      <Card
+        class="border-2"
+        style="background: linear-gradient(135deg, #ffffff 0%, #f5f0eb 100%)"
+      >
         <CardHeader class="text-primary text-2xl">
           Formulário de Contato
         </CardHeader>
         <CardContent>
-          <form
-            @submit.prevent="handleSubmit"
-            class="grid gap-4"
-          >
+          <form @submit.prevent="handleSubmit" class="grid gap-4">
             <div class="flex flex-col gap-1.5">
               <Label for="name">Nome *</Label>
               <Input
@@ -195,9 +228,7 @@ const handleSubmit = async () => {
                     <SelectItem value="Jornada Solar Pocket">
                       Jornada Solar Pocket
                     </SelectItem>
-                    <SelectItem value="Dúvida geral">
-                      Dúvida geral
-                    </SelectItem>
+                    <SelectItem value="Dúvida geral"> Dúvida geral </SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
@@ -214,10 +245,7 @@ const handleSubmit = async () => {
               />
             </div>
 
-            <Alert
-              v-if="invalidInputForm"
-              variant="destructive"
-            >
+            <Alert v-if="invalidInputForm" variant="destructive">
               <AlertCircle class="w-4 h-4" />
               <AlertTitle>Erro</AlertTitle>
               <AlertDescription>
@@ -225,13 +253,11 @@ const handleSubmit = async () => {
               </AlertDescription>
             </Alert>
 
-            <Alert
-              v-if="successMessage"
-              class="bg-green-50 border-green-200"
-            >
+            <Alert v-if="successMessage" class="bg-green-50 border-green-200">
               <AlertTitle class="text-green-800">Sucesso!</AlertTitle>
               <AlertDescription class="text-green-700">
-                Sua mensagem foi enviada com sucesso. Camila entrará em contato em breve!
+                Sua mensagem foi enviada com sucesso. Camila entrará em contato
+                em breve!
               </AlertDescription>
             </Alert>
 

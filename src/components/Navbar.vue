@@ -37,10 +37,7 @@ const routeList: RouteProps[] = [
     href: "#alforriase",
     label: "Sobre",
   },
-  {
-    href: "#camila",
-    label: "Camila",
-  },
+
   {
     href: "#experiencias",
     label: "Experiências",
@@ -48,6 +45,10 @@ const routeList: RouteProps[] = [
   {
     href: "#depoimentos",
     label: "Depoimentos",
+  },
+  {
+    href: "#camila",
+    label: "Camila",
   },
   {
     href: "#contato",
@@ -129,47 +130,6 @@ const isOpen = ref<boolean>(false);
     <!-- Desktop -->
     <NavigationMenu class="hidden lg:block">
       <NavigationMenuList>
-        <NavigationMenuItem>
-          <NavigationMenuContent>
-            <div class="grid w-[600px] grid-cols-2 gap-5 p-4">
-              <img
-                src="https://images.unsplash.com/photo-1494783367193-149034c05e41?w=400&h=400&fit=crop"
-                alt="Alforriase"
-                class="h-full w-full rounded-md object-cover"
-              />
-              <ul class="flex flex-col gap-2">
-                <li class="rounded-md p-3 text-sm hover:bg-muted">
-                  <p class="mb-1 font-semibold leading-none text-foreground">
-                    Jornada Solar
-                  </p>
-                  <p class="line-clamp-2 text-muted-foreground">
-                    4 encontros ao longo do ano para transformar seus objetivos
-                    em um plano prático.
-                  </p>
-                </li>
-                <li class="rounded-md p-3 text-sm hover:bg-muted">
-                  <p class="mb-1 font-semibold leading-none text-foreground">
-                    Leitura de Mapa Astral
-                  </p>
-                  <p class="line-clamp-2 text-muted-foreground">
-                    Mergulho para compreender talentos, desafios e potenciais;
-                    plano de ação prático.
-                  </p>
-                </li>
-                <li class="rounded-md p-3 text-sm hover:bg-muted">
-                  <p class="mb-1 font-semibold leading-none text-foreground">
-                    Astro Express
-                  </p>
-                  <p class="line-clamp-2 text-muted-foreground">
-                    Atendimento rápido para dúvidas pontuais; clareza imediata
-                    para agir.
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
             <Button

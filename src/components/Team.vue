@@ -24,7 +24,7 @@ interface SocialNetworkProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl: "./public/Camila1.jpg",
+    imageUrl: "/Camila1.jpg",
     name: "Camila",
     title: "Fundadora da Alforriase",
     description:
@@ -51,7 +51,7 @@ const teamList: TeamProps[] = [
 <template>
   <section
     id="camila"
-    class="container lg:w-[75%] py-24 sm:py-32"
+    class="container py-24 sm:py-32"
     style="
       background: linear-gradient(
         180deg,
@@ -77,7 +77,7 @@ const teamList: TeamProps[] = [
       </h2>
     </div>
 
-    <div class="grid grid-cols-1 gap-8 max-w-2xl mx-auto">
+    <div class="grid grid-cols-1 gap-8 max-w-2xl mx-auto lg:w-[75%]">
       <Card
         v-for="{
           imageUrl,
