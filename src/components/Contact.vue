@@ -226,8 +226,8 @@ const handleSubmit = async () => {
               <Label for="subject">Serviço de Interesse</Label>
 
               <Select v-model="contactForm.subject">
-                <SelectTrigger>
-                  <SelectValue placeholder="Selecione um serviço" />
+                <SelectTrigger aria-label="Selecione a Jornada Solar">
+                  <SelectValue placeholder="Jornada Solar" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>

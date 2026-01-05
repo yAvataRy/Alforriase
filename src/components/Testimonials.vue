@@ -126,8 +126,8 @@ const reviewList: ReviewProps[] = [
           </Card>
         </CarouselItem>
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious aria-label="Depoimento anterior" />
+      <CarouselNext aria-label="Próximo depoimento" />
     </Carousel>
   </section>
 </template>
