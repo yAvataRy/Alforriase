@@ -31,15 +31,15 @@ const reviewList: ReviewProps[] = [
   {
     image: "",
     name: "Glaucia Égua",
-    result: "",
+    result: "Liberdade",
     comment:
       "Meu mapa este ano só reforçou o que tinha dado nos anos anteriores. Tinha a informação mas não havia me posicionado. Foi preciso auxílio da minha astróloga para me dar clareza sobre os pontos que me travaram, com base nessas reflexões, entendi quais eram as crenças que me limitavam e como trabalhar na libertação desses pontos e, com isso planejar com base na astrologia os meus próximos passos.",
     rating: 5.0,
   },
   {
     image: "",
-    name: "Glaucia",
-    result: "Liberdade",
+    name: "Anonimo",
+    result: "Direcionamento",
     comment:
       "Conhecí a Camis através de uma comunidade de mulheres que fazemos parte. Logo me interessei pelo acompanhamento que ela faz mensalmente, voltado para mulheres. Fizemos nossa primeira sessão dia 30/10 e ela me ajudou a enxergar a astrologia de uma forma diferente. Trouxe todas as questões pelas quais estou passando. Tá tudo lá, no meu mapa solar deste ano. Através do meu mapa, consegui identificar os bloqueios pelos quais estou passando mas tmb me mostrou que os movimentos que tenho feito este ano são exatamente os movimentos que o meu mapa me pede pra fazer. Adorei nosso primeiro encontro e tudo o que me trouxe. Aguardando ansiosa pelo de novembro",
     rating: 5.0,
