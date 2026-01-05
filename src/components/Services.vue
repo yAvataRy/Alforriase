@@ -73,12 +73,10 @@ const serviceList: ServiceProps[] = [
     class="container py-24 sm:py-32"
     style="
       background: linear-gradient(
-        180deg,
+        0deg,
         #c4b5a8 0%,
-        #d1c5ba 25%,
-        #ffffff 50%,
-        #f5f0eb 75%,
-        #e8ddd4 100%
+        /* Topo: Bege Escuro */ #ae7d73 40%,
+        /* Meio: Terracota suave */ #862d3b 100% /* Base: Seu Vermelho */
       );
     "
   >

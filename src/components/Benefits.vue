@@ -53,12 +53,11 @@ const iconMap: Record<
     class="container py-24 sm:py-32"
     style="
       background: linear-gradient(
-        135deg,
-        #f5f0eb 0%,
-        #e8ddd4 25%,
-        #d1c5ba 50%,
-        #c4b5a8 75%,
-        #d1c5ba 100%
+        180deg,
+        #c4b5a8 0%,
+        /* Bege Escuro (Conexão) */ #b28a82 30%,
+        /* Transição suave */ #9c5b5e 60%,
+        /* Transição suave */ #862d3b 100% /* Seu Vermelho */
       );
     "
   >

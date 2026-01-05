@@ -18,12 +18,11 @@ onMounted(() => {
     class="container py-24 sm:py-32"
     style="
       background: linear-gradient(
-        135deg,
-        #c4b5a8 0%,
-        #d1c5ba 25%,
-        #e8ddd4 50%,
-        #f5f0eb 75%,
-        #d1c5ba 100%
+        180deg,
+        #862d3b 0%,
+        /* Topo: Seu Vermelho */ #a56a65 35%,
+        /* Meio: Marrom rosado */ #b99086 70%,
+        /* Meio: Bege rosado */ #c4b5a8 100% /* Base: Bege Escuro */
       );
     "
   >
@@ -65,7 +64,13 @@ onMounted(() => {
         rel="noopener noreferrer"
         class="inline-block px-6 py-3 rounded-lg font-semibold transition-all hover:scale-105"
         style="
-          background: linear-gradient(135deg, #722a24 0%, #8b3d35 40%, #a85547 80%, #c97d6f 100%);
+          background: linear-gradient(
+            135deg,
+            #722a24 0%,
+            #8b3d35 40%,
+            #a85547 80%,
+            #c97d6f 100%
+          );
           color: #ffffff;
           box-shadow: 0 4px 15px rgba(114, 42, 36, 0.3);
         "

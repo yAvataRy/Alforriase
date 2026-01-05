@@ -83,12 +83,12 @@ const handleSubmit = async () => {
     class="container py-24 sm:py-32"
     style="
       background: linear-gradient(
-        135deg,
-        #c4b5a8 0%,
-        #d1c5ba 25%,
-        #f5f0eb 50%,
-        #ffffff 75%,
-        #f5f0eb 100%
+        180deg,
+        #ffffff 0%,
+        #f5f0eb 25%,
+        #e8ddd4 50%,
+        #d1c5ba 75%,
+        #c4b5a8 100%
       );
     "
   >

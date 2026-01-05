@@ -54,7 +54,7 @@ const teamList: TeamProps[] = [
     class="container py-24 sm:py-32"
     style="
       background: linear-gradient(
-        180deg,
+        0deg,
         #ffffff 0%,
         #f5f0eb 25%,
         #e8ddd4 50%,
