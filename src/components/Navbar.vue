@@ -81,7 +81,14 @@ const isOpen = ref<boolean>(false);
     <div class="flex items-center lg:hidden">
       <Sheet v-model:open="isOpen">
         <SheetTrigger as-child>
-          <Menu @click="isOpen = true" class="cursor-pointer" />
+          <Button
+            variant="ghost"
+            size="icon"
+            class="lg:hidden"
+            aria-label="Abrir menu de navegação"
+          >
+            <Menu class="size-6" />
+          </Button>
         </SheetTrigger>
 
         <SheetContent
@@ -94,7 +101,11 @@ const isOpen = ref<boolean>(false);
                 class="flex items-center"
                 style="font-family: 'Playfair Display', serif"
               >
-                <a href="#home" class="flex items-center">
+                <a
+                  href="#home"
+                  class="flex items-center"
+                  @click="isOpen = false"
+                >
                   <Sparkles
                     class="bg-gradient-to-tr from-primary/70 via-primary to-secondary/70 rounded-lg size-9 mr-2 border text-white"
                   />
@@ -103,7 +114,7 @@ const isOpen = ref<boolean>(false);
               </SheetTitle>
             </SheetHeader>
 
-            <div class="flex flex-col gap-2">
+            <nav class="flex flex-col gap-2" aria-label="Menu móvel">
               <Button
                 v-for="{ href, label } in routeList"
                 :key="label"
@@ -115,13 +126,11 @@ const isOpen = ref<boolean>(false);
                   {{ label }}
                 </a>
               </Button>
-            </div>
+            </nav>
           </div>
 
           <SheetFooter class="flex-col sm:flex-col justify-start items-start">
             <Separator class="mb-2" />
-
-            <!-- <ToggleTheme /> -->
           </SheetFooter>
         </SheetContent>
       </Sheet>
