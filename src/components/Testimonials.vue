@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-
 import {
   Card,
   CardContent,
@@ -20,7 +18,6 @@ import {
 import { Star } from "lucide-vue-next";
 
 interface ReviewProps {
-  image: string;
   name: string;
   result: string;
   comment: string;
@@ -29,7 +26,6 @@ interface ReviewProps {
 
 const reviewList: ReviewProps[] = [
   {
-    image: "",
     name: "Glaucia Égua",
     result: "Liberdade",
     comment:
@@ -37,7 +33,6 @@ const reviewList: ReviewProps[] = [
     rating: 5.0,
   },
   {
-    image: "",
     name: "Anonimo",
     result: "Direcionamento",
     comment:
@@ -46,7 +41,6 @@ const reviewList: ReviewProps[] = [
   },
 
   {
-    image: "",
     name: "Mari Balbino",
     result: "Direcionamento",
     comment:
@@ -119,16 +113,11 @@ const reviewList: ReviewProps[] = [
                 <Star class="size-4 fill-primary text-primary" />
               </div>
 
-              <p class="italic">"{{ review.comment }}"</p>
+              <p class="italic !text-[#62120a]">"{{ review.comment }}"</p>
             </CardContent>
 
             <CardHeader>
               <div class="flex flex-row items-center gap-4">
-                <Avatar>
-                  <AvatarImage :src="review.image" :alt="review.name" />
-                  <AvatarFallback>{{ review.name.charAt(0) }}</AvatarFallback>
-                </Avatar>
-
                 <div class="flex flex-col">
                   <CardTitle class="text-lg">{{ review.name }}</CardTitle>
                   <CardDescription>{{ review.result }}</CardDescription>

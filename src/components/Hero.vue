@@ -1,14 +1,6 @@
 <script setup lang="ts">
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-vue-next";
-
-const handleScroll = () => {
-  const element = document.getElementById("contato");
-  if (element) {
-    element.scrollIntoView({ behavior: "smooth" });
-  }
-};
 </script>
 
 <template>
@@ -69,16 +61,6 @@ const handleScroll = () => {
         <div
           class="flex flex-col items-center space-y-4 md:flex-row md:justify-center md:space-y-0 md:space-x-4"
         >
-          <Button
-            class="w-fit px-8 font-bold group/arrow"
-            @click="handleScroll"
-          >
-            Agendar conversa
-            <ArrowRight
-              class="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform"
-            />
-          </Button>
-
           <Button as-child variant="secondary" class="w-fit px-8 font-bold">
             <a
               href="https://api.whatsapp.com/send?phone=5511951366861&text=Ol%C3%A1,%20vim%20pelo%20site."
@@ -97,13 +79,6 @@ const handleScroll = () => {
         <div
           class="absolute -top-6 right-12 w-[90%] h-12 lg:h-[80%] bg-primary/50 blur-3xl rounded-full img-shadow-animation"
         ></div>
-
-        <img
-          class="w-full md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-t-primary/30 img-border-animation"
-          src="https://images.unsplash.com/photo-1494783367193-149034c05e41?w=1200&h=600&fit=crop"
-          alt="Alforriase - Astrologia aplicada para mulheres"
-          loading="lazy"
-        />
 
         <!-- gradient effect img -->
         <div

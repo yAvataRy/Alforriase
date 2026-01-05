@@ -83,13 +83,6 @@ const serviceList: ServiceProps[] = [
     "
   >
     <h2
-      class="text-lg text-primary text-center mb-2 tracking-wider"
-      style="font-family: 'Playfair Display', serif"
-    >
-      Nossas Experiências
-    </h2>
-
-    <h2
       class="text-3xl md:text-4xl text-center font-bold mb-4"
       style="
         background: linear-gradient(
