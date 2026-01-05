@@ -4,10 +4,10 @@ import {
   CardContent,
   CardHeader,
   CardTitle,
-  CardFooter,
+  // CardFooter,
 } from "@/components/ui/card";
 
-import InstagramIcon from "@/icons/XIcon.vue";
+// import InstagramIcon from "@/icons/XIcon.vue";
 
 interface TeamProps {
   imageUrl: string;
@@ -38,14 +38,14 @@ const teamList: TeamProps[] = [
   },
 ];
 
-const socialIcon = (socialName: string) => {
-  switch (socialName) {
-    case "Instagram":
-      return InstagramIcon;
-    default:
-      return InstagramIcon;
-  }
-};
+// const socialIcon = (socialName: string) => {
+//   switch (socialName) {
+//     case "Instagram":
+//       return InstagramIcon;
+//     default:
+//       return InstagramIcon;
+//   }
+//};
 </script>
 
 <template>
@@ -84,7 +84,7 @@ const socialIcon = (socialName: string) => {
           name,
           title,
           description,
-          socialNetworks,
+          // socialNetworks,
         } in teamList"
         :key="imageUrl"
         class="flex flex-col h-full overflow-hidden group/hoverimg border-2 hover:border-[#722a24] transition-all"
