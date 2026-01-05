@@ -113,7 +113,7 @@ const teamList: TeamProps[] = [
           </CardTitle>
         </CardHeader>
 
-        <CardContent class="text-muted-foreground pb-4">
+        <CardContent class="text-foreground pb-4" style="color: #2d1210">
           {{ description }}
         </CardContent>
 
