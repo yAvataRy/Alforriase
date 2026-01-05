@@ -145,6 +145,18 @@ html {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
+    background: linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f5f0eb 15%,
+      #e8ddd4 30%,
+      #d1c5ba 50%,
+      #e8ddd4 70%,
+      #f5f0eb 85%,
+      #ffffff 100%
+    );
+    background-attachment: fixed;
+    min-height: 100vh;
   }
 }
