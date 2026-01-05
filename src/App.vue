@@ -8,6 +8,7 @@ import InstagramFeed from "./components/InstagramFeed.vue";
 import Team from "./components/Team.vue";
 import Contact from "./components/Contact.vue";
 import Footer from "./components/Footer.vue";
+import FAQ from "./components/FAQ.vue";
 </script>
 
 <template>
@@ -19,5 +20,6 @@ import Footer from "./components/Footer.vue";
   <InstagramFeed />
   <Team />
   <Contact />
+  <FAQ />
   <Footer />
 </template>
