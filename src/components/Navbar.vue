@@ -7,7 +7,7 @@ mode.value = "light";
 
 import {
   NavigationMenu,
-  NavigationMenuContent,
+  //NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
