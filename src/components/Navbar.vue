@@ -11,7 +11,6 @@ import {
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import {
   Sheet,
@@ -31,11 +30,6 @@ import { Sparkles, Menu } from "lucide-vue-next";
 interface RouteProps {
   href: string;
   label: string;
-}
-
-interface FeatureProps {
-  title: string;
-  description: string;
 }
 
 const routeList: RouteProps[] = [
@@ -61,23 +55,6 @@ const routeList: RouteProps[] = [
   },
 ];
 
-// const featureList: FeatureProps[] = [
-//   {
-//     title: "Jornada Solar",
-//     description: "4 encontros ao longo do ano para transformar seus objetivos em um plano prático.",
-//   },
-//   {
-//     title: "Leitura de Mapa Astral",
-//     description:
-//       "Mergulho para compreender talentos, desafios e potenciais; plano de ação prático.",
-//   },
-//   {
-//     title: "Astro Express",
-//     description:
-//       "Atendimento rápido para dúvidas pontuais; clareza imediata para agir.",
-//   },
-// ];
-
 const isOpen = ref<boolean>(false);
 </script>
 
@@ -92,7 +69,7 @@ const isOpen = ref<boolean>(false);
     <a
       href="#home"
       class="font-bold text-lg flex items-center"
-      style="font-family: 'Playfair Display', serif;"
+      style="font-family: 'Playfair Display', serif"
     >
       <Sparkles
         class="bg-gradient-to-tr from-primary via-primary/70 to-secondary rounded-lg w-9 h-9 mr-2 border text-white"
@@ -103,10 +80,7 @@ const isOpen = ref<boolean>(false);
     <div class="flex items-center lg:hidden">
       <Sheet v-model:open="isOpen">
         <SheetTrigger as-child>
-          <Menu
-            @click="isOpen = true"
-            class="cursor-pointer"
-          />
+          <Menu @click="isOpen = true" class="cursor-pointer" />
         </SheetTrigger>
 
         <SheetContent
@@ -115,11 +89,11 @@ const isOpen = ref<boolean>(false);
         >
           <div>
             <SheetHeader class="mb-4 ml-4">
-              <SheetTitle class="flex items-center" style="font-family: 'Playfair Display', serif;">
-                <a
-                  href="#home"
-                  class="flex items-center"
-                >
+              <SheetTitle
+                class="flex items-center"
+                style="font-family: 'Playfair Display', serif"
+              >
+                <a href="#home" class="flex items-center">
                   <Sparkles
                     class="bg-gradient-to-tr from-primary/70 via-primary to-secondary/70 rounded-lg size-9 mr-2 border text-white"
                   />
@@ -136,10 +110,7 @@ const isOpen = ref<boolean>(false);
                 variant="ghost"
                 class="justify-start text-base"
               >
-                <a
-                  @click="isOpen = false"
-                  :href="href"
-                >
+                <a @click="isOpen = false" :href="href">
                   {{ label }}
                 </a>
               </Button>
@@ -167,16 +138,31 @@ const isOpen = ref<boolean>(false);
                 class="h-full w-full rounded-md object-cover"
               />
               <ul class="flex flex-col gap-2">
-                <li
-                  v-for="{ title, description } in featureList"
-                  :key="title"
-                  class="rounded-md p-3 text-sm hover:bg-muted"
-                >
+                <li class="rounded-md p-3 text-sm hover:bg-muted">
                   <p class="mb-1 font-semibold leading-none text-foreground">
-                    {{ title }}
+                    Jornada Solar
                   </p>
                   <p class="line-clamp-2 text-muted-foreground">
-                    {{ description }}
+                    4 encontros ao longo do ano para transformar seus objetivos
+                    em um plano prático.
+                  </p>
+                </li>
+                <li class="rounded-md p-3 text-sm hover:bg-muted">
+                  <p class="mb-1 font-semibold leading-none text-foreground">
+                    Leitura de Mapa Astral
+                  </p>
+                  <p class="line-clamp-2 text-muted-foreground">
+                    Mergulho para compreender talentos, desafios e potenciais;
+                    plano de ação prático.
+                  </p>
+                </li>
+                <li class="rounded-md p-3 text-sm hover:bg-muted">
+                  <p class="mb-1 font-semibold leading-none text-foreground">
+                    Astro Express
+                  </p>
+                  <p class="line-clamp-2 text-muted-foreground">
+                    Atendimento rápido para dúvidas pontuais; clareza imediata
+                    para agir.
                   </p>
                 </li>
               </ul>
@@ -205,16 +191,8 @@ const isOpen = ref<boolean>(false);
     <div class="hidden lg:flex gap-2">
       <!-- <ToggleTheme /> -->
 
-      <Button
-        as-child
-        size="sm"
-        class="font-bold"
-      >
-        <a
-          href="#contato"
-        >
-          Agendar conversa
-        </a>
+      <Button as-child size="sm" class="font-bold">
+        <a href="#contato"> Agendar conversa </a>
       </Button>
     </div>
   </header>
