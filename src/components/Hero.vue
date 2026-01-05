@@ -19,7 +19,7 @@ import { Button } from "@/components/ui/button";
     "
   >
     <div
-      class="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32"
+      class="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-10 md:py-24"
     >
       <div class="text-center space-y-8">
         <Badge variant="outline" class="text-sm py-2">
@@ -34,7 +34,8 @@ import { Button } from "@/components/ui/button";
           style="font-family: 'Playfair Display', serif"
         >
           <h1>
-            Alforriase —
+            Alforriase
+            <br />
             <span
               class="text-transparent bg-clip-text"
               style="
@@ -93,22 +94,6 @@ import { Button } from "@/components/ui/button";
 </template>
 
 <style scoped>
-.img-shadow-animation {
-  animation-name: img-shadow-animation;
-  animation-iteration-count: infinite;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  animation-direction: alternate;
-}
-
-.img-border-animation {
-  animation-name: img-border-animation;
-  animation-iteration-count: infinite;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  animation-direction: alternate;
-}
-
 @keyframes img-shadow-animation {
   from {
     opacity: 0.5;
