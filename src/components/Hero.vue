@@ -4,23 +4,31 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-vue-next";
 
 const handleScroll = () => {
-  const element = document.getElementById('contato');
+  const element = document.getElementById("contato");
   if (element) {
-    element.scrollIntoView({ behavior: 'smooth' });
+    element.scrollIntoView({ behavior: "smooth" });
   }
 };
 </script>
 
 <template>
-  <section class="container" id="home" style="background: linear-gradient(180deg, #ffffff 0%, #f5f0eb 50%, #d1c5ba 100%);">
+  <section
+    class="container"
+    id="home"
+    style="
+      background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #f5f0eb 50%,
+        #d1c5ba 100%
+      );
+    "
+  >
     <div
       class="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32"
     >
       <div class="text-center space-y-8">
-        <Badge
-          variant="outline"
-          class="text-sm py-2"
-        >
+        <Badge variant="outline" class="text-sm py-2">
           <span class="mr-2 text-primary">
             <Badge>Novo</Badge>
           </span>
@@ -29,35 +37,39 @@ const handleScroll = () => {
 
         <div
           class="max-w-screen-md mx-auto text-center text-5xl md:text-6xl font-bold"
-          style="font-family: 'Playfair Display', serif;"
+          style="font-family: 'Playfair Display', serif"
         >
           <h1>
             Alforriase —
             <span
               class="text-transparent bg-clip-text"
-              style="background: linear-gradient(135deg, #722a24 0%, #8b3d35 100%); -webkit-background-clip: text; background-clip: text;"
+              style="
+                background: linear-gradient(135deg, #722a24 0%, #8b3d35 100%);
+                -webkit-background-clip: text;
+                background-clip: text;
+              "
               >Clareza que liberta</span
             >
           </h1>
         </div>
 
         <p class="max-w-screen-sm mx-auto text-xl text-muted-foreground">
-          Astrologia aplicada + acompanhamento estratégico para mulheres que querem viver com mais direção e liberdade.
+          Astrologia aplicada + acompanhamento estratégico para mulheres que
+          querem viver com mais direção e liberdade.
         </p>
 
         <div class="space-y-4 md:space-y-0 md:space-x-4">
-          <Button class="w-5/6 md:w-1/4 font-bold group/arrow" @click="handleScroll">
+          <Button
+            class="w-5/6 md:w-1/4 font-bold group/arrow"
+            @click="handleScroll"
+          >
             Agendar conversa
             <ArrowRight
               class="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform"
             />
           </Button>
 
-          <Button
-            as-child
-            variant="secondary"
-            class="w-5/6 md:w-1/4 font-bold"
-          >
+          <Button as-child variant="secondary" class="w-5/6 md:w-1/4 font-bold">
             <a
               href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma conversa com a Camila."
               target="_blank"

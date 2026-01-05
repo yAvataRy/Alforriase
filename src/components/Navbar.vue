@@ -26,7 +26,7 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 
 import { Sparkles, Menu } from "lucide-vue-next";
-import ToggleTheme from "./ToggleTheme.vue";
+// import ToggleTheme from "./ToggleTheme.vue";
 
 interface RouteProps {
   href: string;
@@ -61,22 +61,22 @@ const routeList: RouteProps[] = [
   },
 ];
 
-const featureList: FeatureProps[] = [
-  {
-    title: "Jornada Solar",
-    description: "4 encontros ao longo do ano para transformar seus objetivos em um plano prático.",
-  },
-  {
-    title: "Leitura de Mapa Astral",
-    description:
-      "Mergulho para compreender talentos, desafios e potenciais; plano de ação prático.",
-  },
-  {
-    title: "Astro Express",
-    description:
-      "Atendimento rápido para dúvidas pontuais; clareza imediata para agir.",
-  },
-];
+// const featureList: FeatureProps[] = [
+//   {
+//     title: "Jornada Solar",
+//     description: "4 encontros ao longo do ano para transformar seus objetivos em um plano prático.",
+//   },
+//   {
+//     title: "Leitura de Mapa Astral",
+//     description:
+//       "Mergulho para compreender talentos, desafios e potenciais; plano de ação prático.",
+//   },
+//   {
+//     title: "Astro Express",
+//     description:
+//       "Atendimento rápido para dúvidas pontuais; clareza imediata para agir.",
+//   },
+// ];
 
 const isOpen = ref<boolean>(false);
 </script>
@@ -149,7 +149,7 @@ const isOpen = ref<boolean>(false);
           <SheetFooter class="flex-col sm:flex-col justify-start items-start">
             <Separator class="mb-2" />
 
-            <ToggleTheme />
+            <!-- <ToggleTheme /> -->
           </SheetFooter>
         </SheetContent>
       </Sheet>
@@ -159,9 +159,6 @@ const isOpen = ref<boolean>(false);
     <NavigationMenu class="hidden lg:block">
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger class="bg-card text-base">
-            Serviços
-          </NavigationMenuTrigger>
           <NavigationMenuContent>
             <div class="grid w-[600px] grid-cols-2 gap-5 p-4">
               <img
@@ -206,7 +203,7 @@ const isOpen = ref<boolean>(false);
     </NavigationMenu>
 
     <div class="hidden lg:flex gap-2">
-      <ToggleTheme />
+      <!-- <ToggleTheme /> -->
 
       <Button
         as-child

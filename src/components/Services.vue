@@ -23,12 +23,12 @@ interface ServiceProps {
 }
 
 const handleServiceClick = () => {
-  const element = document.getElementById('contato');
-  if (element) element.scrollIntoView({ behavior: 'smooth' });
+  const element = document.getElementById("contato");
+  if (element) element.scrollIntoView({ behavior: "smooth" });
 };
 
 const handleCardClick = (link: string) => {
-  window.open(link, '_blank');
+  window.open(link, "_blank");
 };
 
 const serviceList: ServiceProps[] = [
@@ -50,7 +50,8 @@ const serviceList: ServiceProps[] = [
   },
   {
     title: "Astro Express",
-    description: "Um atendimento rápido e certeiro pra momentos de dúvida. Você traz uma questão específica, e eu te ajudo a enxergar o cenário com clareza e confiança pra agir",
+    description:
+      "Um atendimento rápido e certeiro pra momentos de dúvida. Você traz uma questão específica, e eu te ajudo a enxergar o cenário com clareza e confiança pra agir",
     details: "Sessão rápida e focada",
     pro: 0,
     link: "https://payfast.greenn.com.br/84572/offer/xAcMsw",
@@ -70,17 +71,38 @@ const serviceList: ServiceProps[] = [
   <section
     id="experiencias"
     class="container py-24 sm:py-32"
-    style="background: linear-gradient(180deg, #d1c5ba 0%, #ffffff 50%, #f5f0eb 100%);"
+    style="
+      background: linear-gradient(
+        180deg,
+        #d1c5ba 0%,
+        #ffffff 50%,
+        #f5f0eb 100%
+      );
+    "
   >
-    <h2 class="text-lg text-primary text-center mb-2 tracking-wider" style="font-family: 'Playfair Display', serif;">
+    <h2
+      class="text-lg text-primary text-center mb-2 tracking-wider"
+      style="font-family: 'Playfair Display', serif"
+    >
       Nossas Experiências
     </h2>
 
-    <h2 class="text-3xl md:text-4xl text-center font-bold mb-4 text-red-600" style="font-family: 'Playfair Display', serif;">
+    <h2
+      class="text-3xl md:text-4xl text-center font-bold mb-4"
+      style="
+        background: linear-gradient(135deg, #722a24 0%, #8b3d35 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        font-family: 'Playfair Display', serif;
+      "
+    >
       Experiências Alforriase
     </h2>
     <h3 class="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-      Escolha o serviço que melhor se adequa ao seu momento e comece sua jornada de clareza e liberdade.
+      Escolha o serviço que melhor se adequa ao seu momento e comece sua jornada
+      de clareza e liberdade.
     </h3>
 
     <div
@@ -90,7 +112,11 @@ const serviceList: ServiceProps[] = [
         v-for="{ title, description, details, pro, link } in serviceList"
         :key="title"
       >
-        <Card class="h-full relative flex flex-col cursor-pointer hover:shadow-lg transition-shadow border-2 hover:border-[#722a24]" style="background: linear-gradient(135deg, #ffffff 0%, #f5f0eb 100%);" @click="handleCardClick(link)">
+        <Card
+          class="h-full relative flex flex-col cursor-pointer hover:shadow-lg transition-shadow border-2 hover:border-[#722a24]"
+          style="background: linear-gradient(135deg, #ffffff 0%, #f5f0eb 100%)"
+          @click="handleCardClick(link)"
+        >
           <CardHeader>
             <CardTitle>{{ title }}</CardTitle>
             <CardDescription>{{ description }}</CardDescription>
@@ -105,11 +131,15 @@ const serviceList: ServiceProps[] = [
         </Card>
       </div>
     </div>
-    
+
     <div class="flex justify-center mt-8">
-      <Button 
+      <Button
         class="font-bold"
-        style="background: linear-gradient(135deg, #722a24 0%, #8b3d35 100%); color: #d1c5ba; border: none;"
+        style="
+          background: linear-gradient(135deg, #722a24 0%, #8b3d35 100%);
+          color: #d1c5ba;
+          border: none;
+        "
         @click="handleServiceClick"
       >
         Quero sanar minhas dúvidas
