@@ -29,7 +29,8 @@ interface ReviewProps {
 
 const reviewList: ReviewProps[] = [
   {
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop",
     name: "Juliana M.",
     result: "Planejamento mais focado",
     comment:
@@ -37,7 +38,8 @@ const reviewList: ReviewProps[] = [
     rating: 5.0,
   },
   {
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop",
     name: "Marina S.",
     result: "Autoconhecimento profundo",
     comment:
@@ -46,7 +48,8 @@ const reviewList: ReviewProps[] = [
   },
 
   {
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&auto=format&fit=crop",
     name: "Ana P.",
     result: "Clareza para agir",
     comment:
@@ -54,7 +57,8 @@ const reviewList: ReviewProps[] = [
     rating: 4.9,
   },
   {
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop",
     name: "Beatriz L.",
     result: "Liberdade e leveza",
     comment:
@@ -62,7 +66,8 @@ const reviewList: ReviewProps[] = [
     rating: 5.0,
   },
   {
-    image: "https://images.unsplash.com/photo-1517841905240-1c28a8a0ceb8?q=80&w=400&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1517841905240-1c28a8a0ceb8?q=80&w=400&auto=format&fit=crop",
     name: "Fernanda T.",
     result: "Transformação pessoal",
     comment:
@@ -76,14 +81,29 @@ const reviewList: ReviewProps[] = [
   <section
     id="depoimentos"
     class="container py-24 sm:py-32"
-    style="background: linear-gradient(135deg, #f5f0eb 0%, #e8ddd4 25%, #d1c5ba 50%, #c4b5a8 75%, #d1c5ba 100%);"
+    style="
+      background: linear-gradient(
+        135deg,
+        #f5f0eb 0%,
+        #e8ddd4 25%,
+        #d1c5ba 50%,
+        #c4b5a8 75%,
+        #d1c5ba 100%
+      );
+    "
   >
     <div class="text-center mb-8">
-      <h2 class="text-lg text-primary text-center mb-2 tracking-wider" style="font-family: 'Playfair Display', serif;">
+      <h2
+        class="text-lg text-primary text-center mb-2 tracking-wider"
+        style="font-family: 'Playfair Display', serif"
+      >
         Depoimentos
       </h2>
 
-      <h2 class="text-3xl md:text-4xl text-center font-bold mb-4" style="font-family: 'Playfair Display', serif;">
+      <h2
+        class="text-3xl md:text-4xl text-center font-bold mb-4"
+        style="font-family: 'Playfair Display', serif"
+      >
         O que nossas clientes dizem
       </h2>
     </div>
@@ -100,7 +120,17 @@ const reviewList: ReviewProps[] = [
           :key="review.name"
           class="md:basis-1/2 lg:basis-1/3"
         >
-          <Card class="h-full border-2 hover:border-[#722a24] transition-all" style="background: linear-gradient(135deg, #ffffff 0%, #f5f0eb 50%, #e8ddd4 100%);">
+          <Card
+            class="h-full border-2 hover:border-[#722a24] transition-all"
+            style="
+              background: linear-gradient(
+                135deg,
+                #ffffff 0%,
+                #f5f0eb 50%,
+                #e8ddd4 100%
+              );
+            "
+          >
             <CardContent class="pt-6 pb-0">
               <div class="flex gap-1 pb-6">
                 <Star class="size-4 fill-primary text-primary" />
@@ -116,10 +146,7 @@ const reviewList: ReviewProps[] = [
             <CardHeader>
               <div class="flex flex-row items-center gap-4">
                 <Avatar>
-                  <AvatarImage
-                    :src="review.image"
-                    :alt="review.name"
-                  />
+                  <AvatarImage :src="review.image" :alt="review.name" />
                   <AvatarFallback>{{ review.name.charAt(0) }}</AvatarFallback>
                 </Avatar>
 

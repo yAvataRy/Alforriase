@@ -46,7 +46,13 @@ const handleScroll = () => {
             <span
               class="text-transparent bg-clip-text"
               style="
-                background: linear-gradient(135deg, #722a24 0%, #8b3d35 40%, #a85547 70%, #c97d6f 100%);
+                background: linear-gradient(
+                  135deg,
+                  #722a24 0%,
+                  #8b3d35 40%,
+                  #a85547 70%,
+                  #c97d6f 100%
+                );
                 -webkit-background-clip: text;
                 background-clip: text;
               "
@@ -60,9 +66,11 @@ const handleScroll = () => {
           querem viver com mais direção e liberdade.
         </p>
 
-        <div class="space-y-4 md:space-y-0 md:space-x-4">
+        <div
+          class="flex flex-col items-center space-y-4 md:flex-row md:justify-center md:space-y-0 md:space-x-4"
+        >
           <Button
-            class="w-5/6 md:w-1/4 font-bold group/arrow"
+            class="w-fit px-8 font-bold group/arrow"
             @click="handleScroll"
           >
             Agendar conversa
@@ -71,13 +79,15 @@ const handleScroll = () => {
             />
           </Button>
 
-          <Button as-child variant="secondary" class="w-5/6 md:w-1/4 font-bold">
+          <Button as-child variant="secondary" class="w-fit px-8 font-bold">
             <a
-              href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma conversa com a Camila."
+              href="https://api.whatsapp.com/send?phone=5511951366861&text=Ol%C3%A1,%20vim%20pelo%20site."
               target="_blank"
               rel="noopener noreferrer"
-              >WhatsApp</a
+              class="whitespace-nowrap"
             >
+              Falar diretamente no whatsapp
+            </a>
           </Button>
         </div>
       </div>

@@ -90,14 +90,21 @@ const teamList: TeamProps[] = [
         } in teamList"
         :key="imageUrl"
         class="flex flex-col h-full overflow-hidden group/hoverimg border-2 hover:border-[#722a24] transition-all"
-        style="background: linear-gradient(135deg, #ffffff 0%, #f5f0eb 50%, #e8ddd4 100%)"
+        style="
+          background: linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #f5f0eb 50%,
+            #e8ddd4 100%
+          );
+        "
       >
         <CardHeader class="p-0 gap-0">
           <div class="h-full overflow-hidden">
             <img
               :src="imageUrl"
               :alt="name"
-              class="w-full aspect-square object-cover saturate-0 transition-all duration-200 ease-linear size-full group-hover/hoverimg:saturate-100 group-hover/hoverimg:scale-[1.01]"
+              class="w-full aspect-square object-cover transition-all duration-200 ease-linear size-full group-hover/hoverimg:saturate-100 group-hover/hoverimg:scale-[1.01]"
             />
           </div>
           <CardTitle class="py-6 pb-4 px-6"
