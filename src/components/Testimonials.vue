@@ -76,7 +76,7 @@ const reviewList: ReviewProps[] = [
   <section
     id="depoimentos"
     class="container py-24 sm:py-32"
-    style="background: linear-gradient(135deg, #f5f0eb 0%, #d1c5ba 50%, #f5f0eb 100%);"
+    style="background: linear-gradient(135deg, #f5f0eb 0%, #e8ddd4 25%, #d1c5ba 50%, #c4b5a8 75%, #d1c5ba 100%);"
   >
     <div class="text-center mb-8">
       <h2 class="text-lg text-primary text-center mb-2 tracking-wider" style="font-family: 'Playfair Display', serif;">
@@ -100,7 +100,7 @@ const reviewList: ReviewProps[] = [
           :key="review.name"
           class="md:basis-1/2 lg:basis-1/3"
         >
-          <Card class="h-full border-2 hover:border-[#722a24] transition-all" style="background: linear-gradient(135deg, #ffffff 0%, #f5f0eb 100%);">
+          <Card class="h-full border-2 hover:border-[#722a24] transition-all" style="background: linear-gradient(135deg, #ffffff 0%, #f5f0eb 50%, #e8ddd4 100%);">
             <CardContent class="pt-6 pb-0">
               <div class="flex gap-1 pb-6">
                 <Star class="size-4 fill-primary text-primary" />

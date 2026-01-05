@@ -59,7 +59,7 @@ const iconMap: Record<
   <section
     id="alforriase"
     class="container py-24 sm:py-32"
-    style="background: linear-gradient(135deg, #f5f0eb 0%, #d1c5ba 50%, #f5f0eb 100%);"
+    style="background: linear-gradient(135deg, #f5f0eb 0%, #e8ddd4 25%, #d1c5ba 50%, #c4b5a8 75%, #d1c5ba 100%);"
   >
     <div class="grid lg:grid-cols-2 place-items-center lg:gap-24">
       <div>
@@ -85,7 +85,7 @@ const iconMap: Record<
           v-for="({ icon, title, description }, index) in benefitList"
           :key="title"
           class="hover:shadow-lg transition-all delay-75 group/number border-2 hover:border-[#722a24]"
-          style="background: linear-gradient(135deg, #ffffff 0%, #f5f0eb 100%);"
+          style="background: linear-gradient(135deg, #ffffff 0%, #f5f0eb 50%, #e8ddd4 100%);"
         >
           <CardHeader>
             <div class="flex justify-between">

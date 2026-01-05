@@ -56,8 +56,10 @@ const teamList: TeamProps[] = [
       background: linear-gradient(
         180deg,
         #ffffff 0%,
-        #f5f0eb 50%,
-        #d1c5ba 100%
+        #f5f0eb 25%,
+        #e8ddd4 50%,
+        #d1c5ba 75%,
+        #c4b5a8 100%
       );
     "
   >
@@ -88,7 +90,7 @@ const teamList: TeamProps[] = [
         } in teamList"
         :key="imageUrl"
         class="flex flex-col h-full overflow-hidden group/hoverimg border-2 hover:border-[#722a24] transition-all"
-        style="background: linear-gradient(135deg, #ffffff 0%, #f5f0eb 100%)"
+        style="background: linear-gradient(135deg, #ffffff 0%, #f5f0eb 50%, #e8ddd4 100%)"
       >
         <CardHeader class="p-0 gap-0">
           <div class="h-full overflow-hidden">

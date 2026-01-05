@@ -84,9 +84,11 @@ const handleSubmit = async () => {
     style="
       background: linear-gradient(
         135deg,
-        #d1c5ba 0%,
+        #c4b5a8 0%,
+        #d1c5ba 25%,
         #f5f0eb 50%,
-        #ffffff 100%
+        #ffffff 75%,
+        #f5f0eb 100%
       );
     "
   >
@@ -96,8 +98,14 @@ const handleSubmit = async () => {
           <h2
             class="text-3xl md:text-4xl font-bold"
             style="
-              background: linear-gradient(135deg, #722a24 0%, #8b3d35 100%);
-              -webkit-background-clip: text;
+              background: linear-gradient(
+                135deg,
+                #722a24 0%,
+                #8b3d35 40%,
+                #a85547 80%,
+                #c97d6f 100%
+              );
+
               background-clip: text;
               -webkit-text-fill-color: transparent;
               color: transparent;
@@ -178,7 +186,14 @@ const handleSubmit = async () => {
       <!-- form -->
       <Card
         class="border-2"
-        style="background: linear-gradient(135deg, #ffffff 0%, #f5f0eb 100%)"
+        style="
+          background: linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #f5f0eb 50%,
+            #e8ddd4 100%
+          );
+        "
       >
         <CardHeader class="text-primary text-2xl">
           Formulário de Contato

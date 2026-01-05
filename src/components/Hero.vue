@@ -19,8 +19,10 @@ const handleScroll = () => {
       background: linear-gradient(
         180deg,
         #ffffff 0%,
-        #f5f0eb 50%,
-        #d1c5ba 100%
+        #f5f0eb 25%,
+        #e8ddd4 50%,
+        #d1c5ba 75%,
+        #c4b5a8 100%
       );
     "
   >
@@ -44,7 +46,7 @@ const handleScroll = () => {
             <span
               class="text-transparent bg-clip-text"
               style="
-                background: linear-gradient(135deg, #722a24 0%, #8b3d35 100%);
+                background: linear-gradient(135deg, #722a24 0%, #8b3d35 40%, #a85547 70%, #c97d6f 100%);
                 -webkit-background-clip: text;
                 background-clip: text;
               "

@@ -74,9 +74,11 @@ const serviceList: ServiceProps[] = [
     style="
       background: linear-gradient(
         180deg,
-        #d1c5ba 0%,
+        #c4b5a8 0%,
+        #d1c5ba 25%,
         #ffffff 50%,
-        #f5f0eb 100%
+        #f5f0eb 75%,
+        #e8ddd4 100%
       );
     "
   >
@@ -90,7 +92,7 @@ const serviceList: ServiceProps[] = [
     <h2
       class="text-3xl md:text-4xl text-center font-bold mb-4"
       style="
-        background: linear-gradient(135deg, #722a24 0%, #8b3d35 100%);
+        background: linear-gradient(135deg, #722a24 0%, #8b3d35 30%, #a85547 60%, #c97d6f 100%);
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -114,7 +116,7 @@ const serviceList: ServiceProps[] = [
       >
         <Card
           class="h-full relative flex flex-col cursor-pointer hover:shadow-lg transition-shadow border-2 hover:border-[#722a24]"
-          style="background: linear-gradient(135deg, #ffffff 0%, #f5f0eb 100%)"
+          style="background: linear-gradient(135deg, #ffffff 0%, #f5f0eb 50%, #e8ddd4 100%)"
           @click="handleCardClick(link)"
         >
           <CardHeader>
@@ -136,9 +138,10 @@ const serviceList: ServiceProps[] = [
       <Button
         class="font-bold"
         style="
-          background: linear-gradient(135deg, #722a24 0%, #8b3d35 100%);
-          color: #d1c5ba;
+          background: linear-gradient(135deg, #722a24 0%, #8b3d35 40%, #a85547 80%, #c97d6f 100%);
+          color: #ffffff;
           border: none;
+          box-shadow: 0 4px 15px rgba(114, 42, 36, 0.3);
         "
         @click="handleServiceClick"
       >
