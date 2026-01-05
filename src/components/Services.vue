@@ -114,7 +114,7 @@ const serviceList: ServiceProps[] = [
           @click="handleCardClick(link)"
         >
           <CardHeader>
-            <CardTitle>{{ title }}</CardTitle>
+            <CardTitle style="color: #000000">{{ title }}</CardTitle>
             <CardDescription style="color: #2d1210">{{
               description
             }}</CardDescription>

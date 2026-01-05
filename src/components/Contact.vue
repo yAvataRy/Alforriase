@@ -115,7 +115,7 @@ const handleSubmit = async () => {
             Vamos conversar?
           </h2>
         </div>
-        <p class="mb-8 text-muted-foreground lg:w-5/6">
+        <p class="mb-8 text-foreground lg:w-5/6" style="color: #2d1210">
           Pronta para transformar seu ciclo? Agende um diagnóstico rápido e
           descubra o próximo passo da sua jornada.
         </p>
@@ -168,7 +168,7 @@ const handleSubmit = async () => {
           </div>
 
           <div class="mt-6">
-            <p class="text-sm text-muted-foreground mb-3">
+            <p class="text-sm text-foreground mb-3" style="color: #2d1210">
               Siga-nos nas redes:
             </p>
             <a

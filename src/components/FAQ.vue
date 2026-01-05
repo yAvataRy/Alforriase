@@ -85,6 +85,7 @@ const FAQList: FAQProps[] = [
           target="_blank"
           rel="noopener noreferrer"
           class="underline"
+          style="color: #2d1210"
           >Entre em contato</a
         >
       </a>

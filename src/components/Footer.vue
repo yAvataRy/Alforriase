@@ -19,7 +19,7 @@ import Separator from "./ui/separator/Separator.vue";
               Alforriase
             </h3>
           </a>
-          <p class="text-sm text-muted-foreground mt-2">
+          <p class="text-sm text-foreground mt-2" style="color: #2d1210">
             Astrologia aplicada para mulheres que querem direção e liberdade.
           </p>
         </div>
@@ -54,14 +54,14 @@ import Separator from "./ui/separator/Separator.vue";
           </div>
         </div> -->
 
-        <div class="flex flex-col gap-2">
+        <div class="flex flex-col gap-2 color2d1210">
           <h3 class="font-bold text-lg">Experiências</h3>
           <div>
             <a
               href="https://payfast.greenn.com.br/84569"
               target="_blank"
               rel="noopener noreferrer"
-              class="opacity-60 hover:opacity-100"
+              class="opacity-80 hover:opacity-100"
             >
               Jornada Solar
             </a>
@@ -72,7 +72,7 @@ import Separator from "./ui/separator/Separator.vue";
               href="https://payfast.greenn.com.br/84552"
               target="_blank"
               rel="noopener noreferrer"
-              class="opacity-60 hover:opacity-100"
+              class="opacity-80 hover:opacity-100"
             >
               Leitura de Mapa Astral
             </a>
@@ -83,7 +83,7 @@ import Separator from "./ui/separator/Separator.vue";
               href="https://payfast.greenn.com.br/84572/offer/xAcMsw"
               target="_blank"
               rel="noopener noreferrer"
-              class="opacity-60 hover:opacity-100"
+              class="opacity-80 hover:opacity-100"
             >
               Astro Express
             </a>
@@ -94,17 +94,17 @@ import Separator from "./ui/separator/Separator.vue";
               href="https://payfast.greenn.com.br/116808/offer/Cmw5Od"
               target="_blank"
               rel="noopener noreferrer"
-              class="opacity-60 hover:opacity-100"
+              class="opacity-80 hover:opacity-100"
             >
               Jornada Solar Pocket
             </a>
           </div>
         </div>
 
-        <div class="flex flex-col gap-2">
+        <div class="flex flex-col gap-2 color2d1210">
           <h3 class="font-bold text-lg">Contato</h3>
           <div>
-            <a href="#contato" class="opacity-60 hover:opacity-100">
+            <a href="#contato" class="opacity-80 hover:opacity-100">
               Formulário
             </a>
           </div>
@@ -114,7 +114,7 @@ import Separator from "./ui/separator/Separator.vue";
               href="https://api.whatsapp.com/send?phone=5511951366861&text=Ol%C3%A1,%20vim%20pelo%20site."
               target="_blank"
               rel="noopener noreferrer"
-              class="opacity-60 hover:opacity-100"
+              class="opacity-80 hover:opacity-100"
             >
               WhatsApp
             </a>
@@ -123,21 +123,21 @@ import Separator from "./ui/separator/Separator.vue";
           <div>
             <a
               href="mailto:alforriase@outlook.com"
-              class="opacity-60 hover:opacity-100"
+              class="opacity-80 hover:opacity-100"
             >
               Email
             </a>
           </div>
         </div>
 
-        <div class="flex flex-col gap-2">
+        <div class="flex flex-col gap-2 color2d1210">
           <h3 class="font-bold text-lg">Redes Sociais</h3>
           <div>
             <a
               href="https://instagram.com/camisdaalforriase"
               target="_blank"
               rel="noopener noreferrer"
-              class="opacity-60 hover:opacity-100"
+              class="opacity-80 hover:opacity-100"
             >
               Instagram
             </a>
@@ -162,7 +162,7 @@ import Separator from "./ui/separator/Separator.vue";
           class="flex flex-col md:flex-row justify-between items-center gap-4"
         >
           <h3 class="text-sm">&copy; 2026 Alforriase.</h3>
-          <p class="text-sm text-muted-foreground">
+          <p class="text-sm text-foreground" style="color: #2d1210">
             Desenvolvido por Bravva Glow - Agência de marketing digital e tech
           </p>
         </div>
@@ -170,3 +170,10 @@ import Separator from "./ui/separator/Separator.vue";
     </div>
   </footer>
 </template>
+
+<style scoped>
+.color2d1210 {
+  color: #2d1210 !important;
+  text-color: #2d1210 !important;
+}
+</style>
