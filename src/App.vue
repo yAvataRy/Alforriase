@@ -13,13 +13,15 @@ import FAQ from "./components/FAQ.vue";
 
 <template>
   <Navbar />
-  <Hero />
-  <Benefits />
-  <Services />
-  <Testimonials />
-  <InstagramFeed />
-  <Team />
-  <Contact />
-  <FAQ />
+  <main id="main-content">
+    <Hero />
+    <Benefits />
+    <Services />
+    <Testimonials />
+    <InstagramFeed />
+    <Team />
+    <Contact />
+    <FAQ />
+  </main>
   <Footer />
 </template>
