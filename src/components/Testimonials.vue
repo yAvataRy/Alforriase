@@ -29,49 +29,28 @@ interface ReviewProps {
 
 const reviewList: ReviewProps[] = [
   {
-    image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop",
-    name: "Juliana M.",
-    result: "Planejamento mais focado",
+    image: "",
+    name: "Glaucia Égua",
+    result: "",
     comment:
-      "A Jornada Solar mudou minha forma de planejar o ano — me sinto mais focada e menos ansiosa.",
+      "Meu mapa este ano só reforçou o que tinha dado nos anos anteriores. Tinha a informação mas não havia me posicionado. Foi preciso auxílio da minha astróloga para me dar clareza sobre os pontos que me travaram, com base nessas reflexões, entendi quais eram as crenças que me limitavam e como trabalhar na libertação desses pontos e, com isso planejar com base na astrologia os meus próximos passos.",
     rating: 5.0,
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop",
-    name: "Marina S.",
-    result: "Autoconhecimento profundo",
+    image: "",
+    name: "Glaucia",
+    result: "Liberdade",
     comment:
-      "A leitura do mapa astral foi reveladora. Camila ajudou a compreender meus talentos e desafios de forma prática.",
+      "Conhecí a Camis através de uma comunidade de mulheres que fazemos parte. Logo me interessei pelo acompanhamento que ela faz mensalmente, voltado para mulheres. Fizemos nossa primeira sessão dia 30/10 e ela me ajudou a enxergar a astrologia de uma forma diferente. Trouxe todas as questões pelas quais estou passando. Tá tudo lá, no meu mapa solar deste ano. Através do meu mapa, consegui identificar os bloqueios pelos quais estou passando mas tmb me mostrou que os movimentos que tenho feito este ano são exatamente os movimentos que o meu mapa me pede pra fazer. Adorei nosso primeiro encontro e tudo o que me trouxe. Aguardando ansiosa pelo de novembro",
     rating: 5.0,
   },
 
   {
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&auto=format&fit=crop",
-    name: "Ana P.",
-    result: "Clareza para agir",
+    image: "",
+    name: "Mari Balbino",
+    result: "Direcionamento",
     comment:
-      "O Astro Express foi perfeito para resolver uma dúvida que me travava. Saí da sessão com clareza e ação.",
-    rating: 4.9,
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop",
-    name: "Beatriz L.",
-    result: "Liberdade e leveza",
-    comment:
-      "Camila me ajudou a priorizar a mim mesma com responsabilidade. Sinto-me mais livre e leve.",
-    rating: 5.0,
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1517841905240-1c28a8a0ceb8?q=80&w=400&auto=format&fit=crop",
-    name: "Fernanda T.",
-    result: "Transformação pessoal",
-    comment:
-      "Depois de três meses com Camila, minha vida mudou completamente. Estou vivendo com mais propósito.",
+      "Conheci a Camila na B2mamy no mês do meu aniversário e descobrindo que nosso mapa astral muda todo ano, pasmem, não sabia, ali decidi que queria ela como astrologa, ainda não finalizei a jornada solar, estou no meu 2 mês, mas tantas coisas bateram que chega a assustar(risos), começo a sentir algo e aí lembro que ela falou algo sobre isso e quando vou consultar o notion que ela oferece, está tudo lá. Recomendo para todas",
     rating: 5.0,
   },
 ];
