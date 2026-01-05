@@ -53,7 +53,10 @@ import { Button } from "@/components/ui/button";
           </h1>
         </div>
 
-        <p class="max-w-screen-sm mx-auto text-xl text-muted-foreground">
+        <p
+          class="max-w-screen-sm mx-auto text-xl text-foreground"
+          style="color: #2d1210"
+        >
           Astrologia aplicada + acompanhamento estratégico para mulheres que
           querem viver com mais direção e liberdade.
         </p>

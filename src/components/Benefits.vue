@@ -76,15 +76,15 @@ const iconMap: Record<
         >
           A História da Alforriase
         </h2>
-        <p class="text-xl text-muted-foreground mb-8">
+        <p class="text-xl text-foreground mb-8" style="color: #f5f0eb">
           Alforriase nasceu do desejo de ajudar mulheres a saírem do automático
           e viverem com liberdade. Aqui a astrologia é ferramenta prática: não
           fazemos previsões, construímos planos de ação.
         </p>
-        <p class="text-lg text-muted-foreground">
+        <p class="text-lg text-foreground" style="color: #f5f0eb">
           <strong>Nome:</strong> Alforriase — dar-se liberdade.
         </p>
-        <p class="text-lg text-muted-foreground">
+        <p class="text-lg text-foreground" style="color: #f5f0eb">
           <strong>Método:</strong> Astrologia aplicada + acompanhamento
           estratégico.
         </p>
@@ -106,13 +106,14 @@ const iconMap: Record<
         >
           <CardHeader>
             <div class="flex justify-between">
-              <component class="size-8 mb-6 text-primary" :is="iconMap[icon]" />
+              <component
+                class="size-8 text-primary mr-4"
+                :is="iconMap[icon]"
+              /><CardTitle>{{ title }}</CardTitle>
             </div>
-
-            <CardTitle>{{ title }}</CardTitle>
           </CardHeader>
 
-          <CardContent class="text-muted-foreground">
+          <CardContent class="text-foreground" style="color: #2d1210">
             {{ description }}
           </CardContent>
         </Card>

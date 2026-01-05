@@ -82,24 +82,14 @@ const serviceList: ServiceProps[] = [
   >
     <h2
       class="text-3xl md:text-4xl text-center font-bold mb-4"
-      style="
-        background: linear-gradient(
-          135deg,
-          #722a24 0%,
-          #8b3d35 30%,
-          #a85547 60%,
-          #c97d6f 100%
-        );
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        color: transparent;
-        font-family: 'Playfair Display', serif;
-      "
+      style="color: #2d1210; font-family: 'Playfair Display', serif"
     >
       Experiências Alforriase
     </h2>
-    <h3 class="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
+    <h3
+      class="md:w-1/2 mx-auto text-xl text-center textforeground mb-8"
+      style="color: #f5f0eb"
+    >
       Escolha o serviço que melhor se adequa ao seu momento e comece sua jornada
       de clareza e liberdade.
     </h3>
@@ -125,7 +115,9 @@ const serviceList: ServiceProps[] = [
         >
           <CardHeader>
             <CardTitle>{{ title }}</CardTitle>
-            <CardDescription>{{ description }}</CardDescription>
+            <CardDescription style="color: #2d1210">{{
+              description
+            }}</CardDescription>
             <p class="text-sm text-primary font-semibold mt-2">{{ details }}</p>
           </CardHeader>
           <Badge

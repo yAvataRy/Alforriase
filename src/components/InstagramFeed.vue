@@ -29,13 +29,13 @@ onMounted(() => {
     <div class="text-center mb-8">
       <h2
         class="text-lg text-center mb-2 tracking-wider"
-        style="font-family: 'Playfair Display', serif; color: #722a24"
+        style="font-family: 'Playfair Display', serif; color: #f5f0eb"
       >
         Instagram
       </h2>
       <h2
         class="text-3xl md:text-4xl text-center font-bold mb-4"
-        style="font-family: 'Playfair Display', serif; color: #722a24"
+        style="font-family: 'Playfair Display', serif; color: #f5f0eb"
       >
         Siga @camisdaalforriase
       </h2>
