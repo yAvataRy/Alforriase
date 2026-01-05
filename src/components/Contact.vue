@@ -78,6 +78,7 @@ const handleSubmit = async () => {
   <section
     id="contato"
     class="container py-24 sm:py-32"
+    style="background: linear-gradient(135deg, #d1c5ba 0%, #f5f0eb 50%, #ffffff 100%);"
   >
     <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div>
@@ -142,7 +143,7 @@ const handleSubmit = async () => {
       </div>
 
       <!-- form -->
-      <Card class="bg-muted/60 dark:bg-card">
+      <Card class="border-2" style="background: linear-gradient(135deg, #ffffff 0%, #f5f0eb 100%);">
         <CardHeader class="text-primary text-2xl">
           Formulário de Contato
         </CardHeader>

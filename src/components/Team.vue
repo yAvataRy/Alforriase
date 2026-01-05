@@ -29,7 +29,7 @@ const teamList: TeamProps[] = [
     name: "Camila",
     title: "Fundadora da Alforriase",
     description:
-      "Há 3 anos trabalhando com astrologia prática, Camila desenvolveu um método que une mapa astral e planejamento estratégico para transformar descobertas em passos concretos. Comunicadora clara e prática, ajuda mulheres a priorizarem a si mesmas com leveza e responsabilidade.",
+      "Eu sou Camila Paes, astróloga e criadora do Método Alforriase, uma abordagem que une astrologia prática e planejamento pra mulheres voltarem a se priorizar e realizar seus objetivos. Já ajudei mais de 200 mulheres a retomarem seus projetos, conquistarem clareza sobre seus caminhos e viverem seus ciclos com mais confiança e leveza. Acredito que liberdade vem quando você aprende a se planejar a partir de quem você é e não do que esperam de você.",
     socialNetworks: [
       {
         name: "Instagram",
@@ -53,6 +53,7 @@ const socialIcon = (socialName: string) => {
   <section
     id="camila"
     class="container lg:w-[75%] py-24 sm:py-32"
+    style="background: linear-gradient(180deg, #ffffff 0%, #f5f0eb 50%, #d1c5ba 100%);"
   >
     <div class="text-center mb-8">
       <h2 class="text-lg text-primary text-center mb-2 tracking-wider" style="font-family: 'Playfair Display', serif;">Fundadora</h2>
@@ -74,7 +75,8 @@ const socialIcon = (socialName: string) => {
           socialNetworks,
         } in teamList"
         :key="imageUrl"
-        class="bg-muted/60 dark:bg-card flex flex-col h-full overflow-hidden group/hoverimg"
+        class="flex flex-col h-full overflow-hidden group/hoverimg border-2 hover:border-[#722a24] transition-all"
+        style="background: linear-gradient(135deg, #ffffff 0%, #f5f0eb 100%);"
       >
         <CardHeader class="p-0 gap-0">
           <div class="h-full overflow-hidden">

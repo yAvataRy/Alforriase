@@ -12,7 +12,7 @@ const handleScroll = () => {
 </script>
 
 <template>
-  <section class="container" id="home">
+  <section class="container" id="home" style="background: linear-gradient(180deg, #ffffff 0%, #f5f0eb 50%, #d1c5ba 100%);">
     <div
       class="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32"
     >
@@ -34,7 +34,8 @@ const handleScroll = () => {
           <h1>
             Alforriase —
             <span
-              class="text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text"
+              class="text-transparent bg-clip-text"
+              style="background: linear-gradient(135deg, #722a24 0%, #8b3d35 100%); -webkit-background-clip: text; background-clip: text;"
               >Clareza que liberta</span
             >
           </h1>
