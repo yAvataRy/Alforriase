@@ -24,8 +24,7 @@ interface SocialNetworkProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl:
-      "https://images.unsplash.com/photo-1494783367193-149034c05e41?q=80&w=1200&auto=format&fit=crop",
+    imageUrl: "./public/Camila1.jpg",
     name: "Camila",
     title: "Fundadora da Alforriase",
     description:
@@ -53,19 +52,32 @@ const socialIcon = (socialName: string) => {
   <section
     id="camila"
     class="container lg:w-[75%] py-24 sm:py-32"
-    style="background: linear-gradient(180deg, #ffffff 0%, #f5f0eb 50%, #d1c5ba 100%);"
+    style="
+      background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #f5f0eb 50%,
+        #d1c5ba 100%
+      );
+    "
   >
     <div class="text-center mb-8">
-      <h2 class="text-lg text-primary text-center mb-2 tracking-wider" style="font-family: 'Playfair Display', serif;">Fundadora</h2>
+      <h2
+        class="text-lg text-primary text-center mb-2 tracking-wider"
+        style="font-family: 'Playfair Display', serif"
+      >
+        Fundadora
+      </h2>
 
-      <h2 class="text-3xl md:text-4xl text-center font-bold" style="font-family: 'Playfair Display', serif;">
+      <h2
+        class="text-3xl md:text-4xl text-center font-bold"
+        style="font-family: 'Playfair Display', serif"
+      >
         Conheça Camila
       </h2>
     </div>
 
-    <div
-      class="grid grid-cols-1 gap-8 max-w-2xl mx-auto"
-    >
+    <div class="grid grid-cols-1 gap-8 max-w-2xl mx-auto">
       <Card
         v-for="{
           imageUrl,
@@ -76,7 +88,7 @@ const socialIcon = (socialName: string) => {
         } in teamList"
         :key="imageUrl"
         class="flex flex-col h-full overflow-hidden group/hoverimg border-2 hover:border-[#722a24] transition-all"
-        style="background: linear-gradient(135deg, #ffffff 0%, #f5f0eb 100%);"
+        style="background: linear-gradient(135deg, #ffffff 0%, #f5f0eb 100%)"
       >
         <CardHeader class="p-0 gap-0">
           <div class="h-full overflow-hidden">
@@ -96,7 +108,7 @@ const socialIcon = (socialName: string) => {
           {{ description }}
         </CardContent>
 
-        <CardFooter class="space-x-4 mt-auto">
+        <!-- <CardFooter class="space-x-4 mt-auto">
           <a
             v-for="{ name: socialName, url } in socialNetworks"
             :key="socialName"
@@ -108,7 +120,7 @@ const socialIcon = (socialName: string) => {
           >
             <component :is="socialIcon(socialName)" />
           </a>
-        </CardFooter>
+        </CardFooter> -->
       </Card>
     </div>
   </section>
