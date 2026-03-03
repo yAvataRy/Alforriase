@@ -8,14 +8,14 @@ import Separator from "./ui/separator/Separator.vue";
     <div class="p-10 bg-muted/50 dark:bg-card border rounded-2xl">
       <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
         <div class="col-span-full xl:col-span-2">
-          <a href="#home" class="flex font-bold items-center">
-            <Sparkles
+          <!-- <a href="#home" class="flex font-bold items-center">
+           <Sparkles
               class="bg-gradient-to-tr from-primary via-primary/70 to-secondary rounded-lg w-9 h-9 mr-2 border text-white" />
 
-            <h3 class="text-2xl" style="font-family: 'Playfair Display', serif">
+             <h3 class="text-2xl" style="font-family: 'Playfair Display', serif">
               Camila, Sua Astrologa
-            </h3>
-          </a>
+            </h3> 
+          </a>-->
           <p class="text-sm text-foreground mt-2" style="color: #2d1210">
             Astrologia aplicada para mulheres que querem direção e liberdade.
           </p>
