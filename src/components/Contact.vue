@@ -45,14 +45,14 @@ const handleSubmit = async () => {
   try {
     // Usar FormSubmit.co para enviar o formulário
     const formData = new FormData();
-    formData.append("name", name);
-    formData.append("email", email);
-    formData.append("subject", subject);
-    formData.append("message", message);
+    formData.append("Nome", name);
+    formData.append("Email", email);
+    formData.append("Serviço de Interesse", subject);
+    formData.append("Mensagem", message);
     formData.append("_captcha", "false");
 
     const response = await fetch(
-      "https://formsubmit.co/ajax/marisocialmedia15@gmail.com",
+      "https://formsubmit.co/ajax/alforriase@outlook.com",
       {
         method: "POST",
         body: formData,
