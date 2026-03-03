@@ -78,7 +78,7 @@ const serviceList: ServiceProps[] = [
     ">
     <h2 class="text-3xl md:text-4xl text-center font-bold mb-4"
       style="color: #2d1210; font-family: 'Playfair Display', serif">
-      Experiências Alforriase
+      Experiências com Sua Astrologa
     </h2>
     <h3 class="md:w-1/2 mx-auto text-xl text-center textforeground mb-8" style="color: #f5f0eb">
       Escolha o serviço que melhor se adequa ao seu momento e comece sua jornada

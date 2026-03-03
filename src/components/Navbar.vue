@@ -68,7 +68,7 @@ const isOpen = ref<boolean>(false);
     <a href="#home" class="font-bold text-lg flex items-center" style="font-family: 'Playfair Display', serif">
       <Sparkles
         class="bg-gradient-to-tr from-primary via-primary/70 to-secondary rounded-lg w-9 h-9 mr-2 border text-white" />
-      Alforriase
+      Camila, Sua Astrologa
     </a>
     <!-- Mobile -->
     <div class="flex items-center lg:hidden">
@@ -86,7 +86,7 @@ const isOpen = ref<boolean>(false);
                 <a href="#home" class="flex items-center" @click="isOpen = false">
                   <Sparkles
                     class="bg-gradient-to-tr from-primary/70 via-primary to-secondary/70 rounded-lg size-9 mr-2 border text-white" />
-                  Alforriase
+                  Camila, Sua Astrologa
                 </a>
               </SheetTitle>
             </SheetHeader>
