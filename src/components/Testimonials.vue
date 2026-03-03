@@ -51,10 +51,7 @@ const reviewList: ReviewProps[] = [
 </script>
 
 <template>
-  <section
-    id="depoimentos"
-    class="container py-24 sm:py-32"
-    style="
+  <section id="depoimentos" class="container py-24 sm:py-32" style="
       background: linear-gradient(
         180deg,
         #c4b5a8 0%,
@@ -62,47 +59,30 @@ const reviewList: ReviewProps[] = [
         /* Transição suave */ #9c5b5e 60%,
         /* Transição suave */ #862d3b 100% /* Seu Vermelho */
       );
-    "
-  >
+    ">
     <div class="text-center mb-8">
-      <h2
-        class="text-lg text-primary text-center mb-2 tracking-wider"
-        style="font-family: 'Playfair Display', serif"
-      >
+      <h2 class="text-lg text-primary text-center mb-2 tracking-wider" style="font-family: 'Playfair Display', serif">
         Depoimentos
       </h2>
 
-      <h2
-        class="text-3xl md:text-4xl text-center font-bold mb-4"
-        style="font-family: 'Playfair Display', serif"
-      >
-        O que nossas clientes dizem
+      <h2 class="text-3xl md:text-4xl text-center font-bold mb-4" style="font-family: 'Playfair Display', serif">
+        Mulheres que decidiram com mais clareza
       </h2>
     </div>
 
-    <Carousel
-      :opts="{
-        align: 'start',
-      }"
-      class="relative w-[80%] sm:w-[90%] lg:max-w-screen-xl mx-auto"
-    >
+    <Carousel :opts="{
+      align: 'start',
+    }" class="relative w-[80%] sm:w-[90%] lg:max-w-screen-xl mx-auto">
       <CarouselContent>
-        <CarouselItem
-          v-for="review in reviewList"
-          :key="review.name"
-          class="md:basis-1/2 lg:basis-1/3"
-        >
-          <Card
-            class="h-full border-2 hover:border-[#722a24] transition-all"
-            style="
+        <CarouselItem v-for="review in reviewList" :key="review.name" class="md:basis-1/2 lg:basis-1/3">
+          <Card class="h-full border-2 hover:border-[#722a24] transition-all" style="
               background: linear-gradient(
                 135deg,
                 #ffffff 0%,
                 #f5f0eb 50%,
                 #e8ddd4 100%
               );
-            "
-          >
+            ">
             <CardContent class="pt-6 pb-0">
               <div class="flex gap-1 pb-6">
                 <Star class="size-4 fill-primary text-primary" />
