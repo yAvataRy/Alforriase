@@ -13,7 +13,7 @@ import Separator from "./ui/separator/Separator.vue";
               class="bg-gradient-to-tr from-primary via-primary/70 to-secondary rounded-lg w-9 h-9 mr-2 border text-white" />
 
              <h3 class="text-2xl" style="font-family: 'Playfair Display', serif">
-              Camila, Sua Astrologa
+              Camila, Sua Astróloga
             </h3> 
           </a>-->
           <p class="text-sm text-foreground mt-2" style="color: #2d1210">

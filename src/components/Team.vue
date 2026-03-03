@@ -49,7 +49,7 @@ const teamList: TeamProps[] = [
 </script>
 
 <template>
-  <section id="camila" class="container py-24 sm:py-32" style="
+  <!-- <section id="camila" class="container py-24 sm:py-32" style="
       background: linear-gradient(
         0deg,
         #ffffff 0%,
@@ -57,6 +57,15 @@ const teamList: TeamProps[] = [
         #e8ddd4 50%,
         #d1c5ba 75%,
         #c4b5a8 100%
+      );
+    "> QUANDO VOLTAR O INSTAGRAM FEED USAR ESSE BACKGROUND  ACIMA-->
+  <section id="camila" class="container py-24 sm:py-32" style="
+      background: linear-gradient(
+        180deg,
+        #862d3b 0%,
+        /* Topo: Seu Vermelho */ #a56a65 35%,
+        /* Meio: Marrom rosado */ #b99086 70%,
+        /* Meio: Bege rosado */ #c4b5a8 100% /* Base: Bege Escuro */
       );
     ">
     <div class="text-center mb-8">

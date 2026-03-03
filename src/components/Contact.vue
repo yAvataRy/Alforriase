@@ -52,7 +52,7 @@ const handleSubmit = async () => {
     formData.append("_captcha", "false");
 
     const response = await fetch(
-      "https://formsubmit.co/ajax/seu_email@alforriase.com",
+      "https://formsubmit.co/ajax/marisocialmedia15@gmail.com",
       {
         method: "POST",
         body: formData,
@@ -78,9 +78,19 @@ const handleSubmit = async () => {
 </script>
 
 <template>
-  <section id="contato" class="container py-24 sm:py-32" style="
+  <!-- <section id="contato" class="container py-24 sm:py-32" style="
       background: linear-gradient(
         180deg,
+        #ffffff 0%,
+        #f5f0eb 25%,
+        #e8ddd4 50%,
+        #d1c5ba 75%,
+        #c4b5a8 100%
+      );
+    ">  USAR ESSE BACKGROUND QUANDO VOLTAR O INSTAGRAM FEED USAR ESSE BACKGROUND  ACIMA-->
+  <section id="contato" class="container py-24 sm:py-32" style="
+      background: linear-gradient(
+        0deg,
         #ffffff 0%,
         #f5f0eb 25%,
         #e8ddd4 50%,
