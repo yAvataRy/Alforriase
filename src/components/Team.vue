@@ -32,7 +32,7 @@ const teamList: TeamProps[] = [
     socialNetworks: [
       {
         name: "Instagram",
-        url: "https://instagram.com/camisdaalforriase",
+        url: "https://instagram.com/camila.suaastrologa",
       },
     ],
   },
@@ -49,10 +49,7 @@ const teamList: TeamProps[] = [
 </script>
 
 <template>
-  <section
-    id="camila"
-    class="container py-24 sm:py-32"
-    style="
+  <section id="camila" class="container py-24 sm:py-32" style="
       background: linear-gradient(
         0deg,
         #ffffff 0%,
@@ -61,8 +58,7 @@ const teamList: TeamProps[] = [
         #d1c5ba 75%,
         #c4b5a8 100%
       );
-    "
-  >
+    ">
     <div class="text-center mb-8">
       <!-- <h2
         class="text-lg text-primary text-center mb-2 tracking-wider"
@@ -71,24 +67,19 @@ const teamList: TeamProps[] = [
         Fundadora
       </h2> -->
 
-      <h2
-        class="text-3xl md:text-4xl text-center font-bold"
-        style="font-family: 'Playfair Display', serif"
-      >
+      <h2 class="text-3xl md:text-4xl text-center font-bold" style="font-family: 'Playfair Display', serif">
         Conheça Camila
       </h2>
     </div>
 
     <div class="grid grid-cols-1 gap-8 max-w-2xl mx-auto lg:w-[75%]">
-      <Card
-        v-for="{
-          imageUrl,
-          name,
-          title,
-          description,
-          // socialNetworks,
-        } in teamList"
-        :key="imageUrl"
+      <Card v-for="{
+        imageUrl,
+        name,
+        title,
+        description,
+        // socialNetworks,
+      } in teamList" :key="imageUrl"
         class="flex flex-col h-full overflow-hidden group/hoverimg border-2 hover:border-[#722a24] transition-all"
         style="
           background: linear-gradient(
@@ -97,18 +88,13 @@ const teamList: TeamProps[] = [
             #f5f0eb 50%,
             #e8ddd4 100%
           );
-        "
-      >
+        ">
         <CardHeader class="p-0 gap-0">
           <div class="h-full overflow-hidden">
-            <img
-              :src="imageUrl"
-              :alt="name"
-              class="w-full aspect-square object-cover transition-all duration-200 ease-linear size-full group-hover/hoverimg:saturate-100 group-hover/hoverimg:scale-[1.01]"
-            />
+            <img :src="imageUrl" :alt="name"
+              class="w-full aspect-square object-cover transition-all duration-200 ease-linear size-full group-hover/hoverimg:saturate-100 group-hover/hoverimg:scale-[1.01]" />
           </div>
-          <CardTitle class="py-6 pb-4 px-6"
-            >{{ name }}
+          <CardTitle class="py-6 pb-4 px-6">{{ name }}
             <span class="text-primary">{{ title }}</span>
           </CardTitle>
         </CardHeader>

@@ -2,7 +2,7 @@
 
 ## 📋 Sobre o Projeto
 
-Landing page profissional para **Alforriase**, um serviço de astrologia aplicada e acompanhamento estratégico para mulheres. O projeto foi desenvolvido com **Vue 3**, **TypeScript**, **Tailwind CSS** e **shadcn/vue**.
+Landing page profissional para **Camila, Sua Astrologa**, um serviço de astrologia aplicada e acompanhamento estratégico para mulheres. O projeto foi desenvolvido com **Vue 3**, **TypeScript**, **Tailwind CSS** e **shadcn/vue**.
 
 ## 🚀 Stack Tecnológico
 
@@ -117,7 +117,7 @@ Substitua o link do Instagram em:
 - `src/components/Footer.vue`
 - `src/components/Contact.vue`
 
-De: `https://instagram.com/camisdaalforriase`
+De: `https://instagram.com/camila.suaastrologa`
 Para: `https://instagram.com/seu_usuario`
 
 ### 4. Imagens

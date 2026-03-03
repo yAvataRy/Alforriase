@@ -46,7 +46,7 @@ onMounted(() => {
     </div>
 
     <div class="text-center mt-8">
-      <a href="https://www.instagram.com/camisdaalforriase/" target="_blank" rel="noopener noreferrer"
+      <a href="https://www.instagram.com/camila.suaastrologa/" target="_blank" rel="noopener noreferrer"
         class="inline-block px-6 py-3 rounded-lg font-semibold transition-all hover:scale-105" style="
           background: linear-gradient(
             135deg,
