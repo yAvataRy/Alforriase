@@ -64,7 +64,7 @@ const isOpen = ref<boolean>(false);
     :class="{
       'shadow-light': mode === 'light',
       'shadow-dark': mode === 'dark',
-      'w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border z-40 rounded-2xl flex justify-between items-center p-2 bg-card shadow-md': true,
+      'w-[90%] md:w-[70%] 1.3xl:w-[75%] 1.3xl:max-w-screen-xl top-5 mx-auto sticky border z-40 rounded-2xl flex justify-between items-center p-2 bg-card shadow-md': true,
     }"
   >
     <a
@@ -78,13 +78,13 @@ const isOpen = ref<boolean>(false);
       Camila, Sua Astróloga
     </a>
     <!-- Mobile -->
-    <div class="flex items-center lg:hidden">
+    <div class="flex items-center 1.3xl:hidden">
       <Sheet v-model:open="isOpen">
         <SheetTrigger as-child>
           <Button
             variant="ghost"
             size="icon"
-            class="lg:hidden"
+            class="1.3xl:hidden"
             aria-label="Abrir menu de navegação"
           >
             <Menu class="size-6" />
@@ -137,7 +137,7 @@ const isOpen = ref<boolean>(false);
     </div>
 
     <!-- Desktop -->
-    <NavigationMenu class="hidden lg:block">
+    <NavigationMenu class="hidden 1.3xl:block">
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
@@ -157,7 +157,7 @@ const isOpen = ref<boolean>(false);
       </NavigationMenuList>
     </NavigationMenu>
 
-    <div class="hidden lg:flex gap-2">
+    <div class="hidden 1.3xl:flex gap-2">
       <!-- <ToggleTheme /> -->
 
       <Button as-child size="sm" class="font-bold">
