@@ -49,7 +49,7 @@ const teamList: TeamProps[] = [
 </script>
 
 <template>
-  <!-- <section id="camila" class="container py-24 sm:py-32" style="
+  <!-- <section id="camila" class="container py-12 sm:py-16" style="
       background: linear-gradient(
         0deg,
         #ffffff 0%,
@@ -59,7 +59,7 @@ const teamList: TeamProps[] = [
         #c4b5a8 100%
       );
     "> QUANDO VOLTAR O INSTAGRAM FEED USAR ESSE BACKGROUND  ACIMA-->
-  <section id="camila" class="container py-24 sm:py-32">
+  <section id="camila" class="container py-12 sm:py-16">
     <div class="text-center mb-8">
       <!-- <h2
         class="text-lg text-primary text-center mb-2 tracking-wider"
@@ -68,26 +68,36 @@ const teamList: TeamProps[] = [
         Fundadora
       </h2> -->
 
-      <h2 class="text-3xl md:text-4xl text-center font-bold" style="font-family: 'Playfair Display', serif">
+      <h2
+        class="text-3xl md:text-4xl text-center font-bold"
+        style="font-family: 'Playfair Display', serif"
+      >
         Conheça Camila
       </h2>
     </div>
 
     <div class="grid grid-cols-1 gap-8 max-w-2xl mx-auto lg:w-[75%]">
-      <Card v-for="{
-        imageUrl,
-        name,
-        title,
-        description,
-        // socialNetworks,
-      } in teamList" :key="imageUrl"
-        class="flex flex-col h-full overflow-hidden group/hoverimg border-2 border-teal/15 hover:border-wine/60 transition-all bg-background/80 backdrop-blur-sm">
+      <Card
+        v-for="{
+          imageUrl,
+          name,
+          title,
+          description,
+          // socialNetworks,
+        } in teamList"
+        :key="imageUrl"
+        class="flex flex-col h-full overflow-hidden group/hoverimg border-2 border-teal/15 hover:border-wine/60 transition-all bg-background/80 backdrop-blur-sm"
+      >
         <CardHeader class="p-0 gap-0">
           <div class="h-full overflow-hidden">
-            <img :src="imageUrl" :alt="name"
-              class="w-full aspect-square object-cover transition-all duration-200 ease-linear size-full group-hover/hoverimg:saturate-100 group-hover/hoverimg:scale-[1.01]" />
+            <img
+              :src="imageUrl"
+              :alt="name"
+              class="w-full aspect-square object-cover transition-all duration-200 ease-linear size-full group-hover/hoverimg:saturate-100 group-hover/hoverimg:scale-[1.01]"
+            />
           </div>
-          <CardTitle class="py-6 pb-4 px-6">{{ name }}
+          <CardTitle class="py-6 pb-4 px-6"
+            >{{ name }}
             <span class="text-primary">{{ title }}</span>
           </CardTitle>
         </CardHeader>

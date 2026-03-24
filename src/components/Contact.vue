@@ -78,7 +78,7 @@ const handleSubmit = async () => {
 </script>
 
 <template>
-  <!-- <section id="contato" class="container py-24 sm:py-32" style="
+  <!-- <section id="contato" class="container py-12 sm:py-16" style="
       background: linear-gradient(
         180deg,
         #ffffff 0%,
@@ -88,11 +88,13 @@ const handleSubmit = async () => {
         #c4b5a8 100%
       );
     ">  USAR ESSE BACKGROUND QUANDO VOLTAR O INSTAGRAM FEED USAR ESSE BACKGROUND  ACIMA-->
-  <section id="contato" class="container py-24 sm:py-32">
+  <section id="contato" class="container py-12 sm:py-16">
     <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div>
         <div class="mb-4">
-          <h2 class="text-3xl md:text-4xl font-bold" style="
+          <h2
+            class="text-3xl md:text-4xl font-bold"
+            style="
               background: linear-gradient(
                 135deg,
                 rgb(var(--wine-rgb)) 0%,
@@ -104,7 +106,8 @@ const handleSubmit = async () => {
               -webkit-text-fill-color: transparent;
               color: transparent;
               font-family: 'Playfair Display', serif;
-            ">
+            "
+          >
             Vamos conversar?
           </h2>
         </div>
@@ -121,7 +124,10 @@ const handleSubmit = async () => {
             </div>
 
             <div>
-              <a href="mailto:camilasuaastrologa@outlook.com" class="text-primary hover:underline">
+              <a
+                href="mailto:camilasuaastrologa@outlook.com"
+                class="text-primary hover:underline"
+              >
                 camilasuaastrologa@outlook.com
               </a>
             </div>
@@ -134,8 +140,12 @@ const handleSubmit = async () => {
             </div>
 
             <div>
-              <a href="https://api.whatsapp.com/send?phone=5511951366861&text=Ol%C3%A1,%20vim%20pelo%20site."
-                target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
+              <a
+                href="https://api.whatsapp.com/send?phone=5511951366861&text=Ol%C3%A1,%20vim%20pelo%20site."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-primary hover:underline"
+              >
                 +55 (11) 95136-6861
               </a>
             </div>
@@ -154,11 +164,13 @@ const handleSubmit = async () => {
           </div>
 
           <div class="mt-6">
-            <p class="text-sm text-foreground mb-3">
-              Siga-nos nas redes:
-            </p>
-            <a href="https://instagram.com/camila.suaastrologa" target="_blank" rel="noopener noreferrer"
-              class="text-primary hover:underline">
+            <p class="text-sm text-foreground mb-3">Siga-nos nas redes:</p>
+            <a
+              href="https://instagram.com/camila.suaastrologa"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary hover:underline"
+            >
               @camila.suaastrologa
             </a>
           </div>
@@ -174,12 +186,24 @@ const handleSubmit = async () => {
           <form @submit.prevent="handleSubmit" class="grid gap-4">
             <div class="flex flex-col gap-1.5">
               <Label for="name">Nome *</Label>
-              <Input id="name" type="text" placeholder="Seu nome" v-model="contactForm.name" required />
+              <Input
+                id="name"
+                type="text"
+                placeholder="Seu nome"
+                v-model="contactForm.name"
+                required
+              />
             </div>
 
             <div class="flex flex-col gap-1.5">
               <Label for="email">Email *</Label>
-              <Input id="email" type="email" placeholder="seu@email.com" v-model="contactForm.email" required />
+              <Input
+                id="email"
+                type="email"
+                placeholder="seu@email.com"
+                v-model="contactForm.email"
+                required
+              />
             </div>
 
             <div class="flex flex-col gap-1.5">
@@ -211,8 +235,13 @@ const handleSubmit = async () => {
 
             <div class="flex flex-col gap-1.5">
               <Label for="message">Mensagem *</Label>
-              <Textarea id="message" placeholder="Conte-nos mais sobre você e o que você busca..." rows="5"
-                v-model="contactForm.message" required />
+              <Textarea
+                id="message"
+                placeholder="Conte-nos mais sobre você e o que você busca..."
+                rows="5"
+                v-model="contactForm.message"
+                required
+              />
             </div>
 
             <Alert v-if="invalidInputForm" variant="destructive">

@@ -48,23 +48,31 @@ const iconMap: Record<
 </script>
 
 <template>
-  <section id="alforriase" class="container py-24 sm:py-32">
+  <section id="alforriase" class="container py-12 sm:py-16">
     <div class="grid lg:grid-cols-2 place-items-center lg:gap-24">
       <div>
-        <h2 class="text-lg text-primary mb-2 tracking-wider" style="font-family: 'Playfair Display', serif">
+        <h2
+          class="text-lg text-primary mb-2 tracking-wider"
+          style="font-family: 'Playfair Display', serif"
+        >
           Sobre
         </h2>
 
-        <h2 class="text-3xl md:text-4xl font-bold mb-4" style="font-family: 'Playfair Display', serif">
+        <h2
+          class="text-3xl md:text-4xl font-bold mb-4"
+          style="font-family: 'Playfair Display', serif"
+        >
           Minha História
         </h2>
         <p class="text-xl text-foreground mb-8">
-          Meu trabalho nasceu do desejo de ajudar mulheres a saírem do automático profissional.
+          Meu trabalho nasceu do desejo de ajudar mulheres a saírem do
+          automático profissional.
         </p>
 
         <p class="text-xl text-foreground mb-8">
-          Eu <span class="italic">não</span> uso astrologia para prever.<br>
-          Eu uso astrologia para <span class="font-semibold">organizar decisões</span>.
+          Eu <span class="italic">não</span> uso astrologia para prever.<br />
+          Eu uso astrologia para
+          <span class="font-semibold">organizar decisões</span>.
         </p>
 
         <p class="text-xl text-foreground mb-4">
@@ -78,7 +86,8 @@ const iconMap: Record<
           <li>• evitar decisões impulsivas</li>
         </ul>
         <p class="text-lg text-foreground">
-          <strong>Método:</strong> Astrologia aplicada + planejamento estratégico anual.
+          <strong>Método:</strong> Astrologia aplicada + planejamento
+          estratégico anual.
         </p>
         <p class="text-lg text-foreground">
           <strong>Foco:</strong> Carreira, trabalho e decisões importantes.
@@ -86,8 +95,11 @@ const iconMap: Record<
       </div>
 
       <div class="grid lg:grid-cols-2 gap-4 w-full">
-        <Card v-for="{ icon, title, description } in benefitList" :key="title"
-          class="hover:shadow-lg transition-all delay-75 group/number border-2 border-teal/15 hover:border-wine/60 bg-background/80 backdrop-blur-sm">
+        <Card
+          v-for="{ icon, title, description } in benefitList"
+          :key="title"
+          class="hover:shadow-lg transition-all delay-75 group/number border-2 border-teal/15 hover:border-wine/60 bg-background/80 backdrop-blur-sm"
+        >
           <CardHeader>
             <div class="flex justify-between">
               <component class="size-8 text-primary mr-4" :is="iconMap[icon]" />

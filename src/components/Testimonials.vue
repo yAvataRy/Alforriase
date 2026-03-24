@@ -51,23 +51,38 @@ const reviewList: ReviewProps[] = [
 </script>
 
 <template>
-  <section id="depoimentos" class="container py-24 sm:py-32">
+  <section id="depoimentos" class="container py-12 sm:py-16">
     <div class="text-center mb-8">
-      <h2 class="text-lg text-primary text-center mb-2 tracking-wider" style="font-family: 'Playfair Display', serif">
+      <h2
+        class="text-lg text-primary text-center mb-2 tracking-wider"
+        style="font-family: 'Playfair Display', serif"
+      >
         Depoimentos
       </h2>
 
-      <h2 class="text-3xl md:text-4xl text-center font-bold mb-4" style="font-family: 'Playfair Display', serif">
+      <h2
+        class="text-3xl md:text-4xl text-center font-bold mb-4"
+        style="font-family: 'Playfair Display', serif"
+      >
         Mulheres que decidiram com mais clareza
       </h2>
     </div>
 
-    <Carousel :opts="{
-      align: 'start',
-    }" class="relative w-[80%] sm:w-[90%] lg:max-w-screen-xl mx-auto">
+    <Carousel
+      :opts="{
+        align: 'start',
+      }"
+      class="relative w-[80%] sm:w-[90%] lg:max-w-screen-xl mx-auto"
+    >
       <CarouselContent>
-        <CarouselItem v-for="review in reviewList" :key="review.name" class="md:basis-1/2 lg:basis-1/3">
-          <Card class="h-full border-2 border-teal/15 hover:border-wine/60 transition-all bg-background/80 backdrop-blur-sm">
+        <CarouselItem
+          v-for="review in reviewList"
+          :key="review.name"
+          class="md:basis-1/2 lg:basis-1/3"
+        >
+          <Card
+            class="h-full border-2 border-teal/15 hover:border-wine/60 transition-all bg-background/80 backdrop-blur-sm"
+          >
             <CardContent class="pt-6 pb-0">
               <div class="flex gap-1 pb-6">
                 <Star class="size-4 fill-primary text-primary" />
