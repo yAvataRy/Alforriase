@@ -88,26 +88,16 @@ const handleSubmit = async () => {
         #c4b5a8 100%
       );
     ">  USAR ESSE BACKGROUND QUANDO VOLTAR O INSTAGRAM FEED USAR ESSE BACKGROUND  ACIMA-->
-  <section id="contato" class="container py-24 sm:py-32" style="
-      background: linear-gradient(
-        0deg,
-        #ffffff 0%,
-        #f5f0eb 25%,
-        #e8ddd4 50%,
-        #d1c5ba 75%,
-        #c4b5a8 100%
-      );
-    ">
+  <section id="contato" class="container py-24 sm:py-32">
     <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div>
         <div class="mb-4">
           <h2 class="text-3xl md:text-4xl font-bold" style="
               background: linear-gradient(
                 135deg,
-                #722a24 0%,
-                #8b3d35 40%,
-                #a85547 80%,
-                #c97d6f 100%
+                rgb(var(--wine-rgb)) 0%,
+                rgb(var(--cta-rgb)) 52%,
+                rgb(var(--teal-rgb)) 100%
               );
 
               background-clip: text;
@@ -118,7 +108,7 @@ const handleSubmit = async () => {
             Vamos conversar?
           </h2>
         </div>
-        <p class="mb-8 text-foreground lg:w-5/6" style="color: #2d1210">
+        <p class="mb-8 text-foreground lg:w-5/6">
           Pronta para transformar seu ciclo? Agende um diagnóstico rápido e
           descubra o próximo passo da sua jornada.
         </p>
@@ -131,8 +121,8 @@ const handleSubmit = async () => {
             </div>
 
             <div>
-              <a href="mailto:alforriase@outlook.com" class="text-primary hover:underline">
-                alforriase@outlook.com
+              <a href="mailto:camilasuaastrologa@outlook.com" class="text-primary hover:underline">
+                camilasuaastrologa@outlook.com
               </a>
             </div>
           </div>
@@ -164,7 +154,7 @@ const handleSubmit = async () => {
           </div>
 
           <div class="mt-6">
-            <p class="text-sm text-foreground mb-3" style="color: #2d1210">
+            <p class="text-sm text-foreground mb-3">
               Siga-nos nas redes:
             </p>
             <a href="https://instagram.com/camila.suaastrologa" target="_blank" rel="noopener noreferrer"
@@ -176,14 +166,7 @@ const handleSubmit = async () => {
       </div>
 
       <!-- form -->
-      <Card class="border-2" style="
-          background: linear-gradient(
-            135deg,
-            #ffffff 0%,
-            #f5f0eb 50%,
-            #e8ddd4 100%
-          );
-        ">
+      <Card class="border-2 border-teal/15 bg-background/80 backdrop-blur-sm">
         <CardHeader class="text-primary text-2xl">
           Formulário de Contato
         </CardHeader>

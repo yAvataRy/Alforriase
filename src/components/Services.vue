@@ -68,19 +68,12 @@ const serviceList: ServiceProps[] = [
 </script>
 
 <template>
-  <section id="experiencias" class="container py-24 sm:py-32" style="
-      background: linear-gradient(
-        0deg,
-        #c4b5a8 0%,
-        /* Topo: Bege Escuro */ #ae7d73 40%,
-        /* Meio: Terracota suave */ #862d3b 100% /* Base: Seu Vermelho */
-      );
-    ">
+  <section id="experiencias" class="container py-24 sm:py-32">
     <h2 class="text-3xl md:text-4xl text-center font-bold mb-4"
-      style="color: #2d1210; font-family: 'Playfair Display', serif">
+      style="font-family: 'Playfair Display', serif">
       Experiências com sua astróloga
     </h2>
-    <h3 class="md:w-1/2 mx-auto text-xl text-center textforeground mb-8" style="color: #f5f0eb">
+    <h3 class="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
       Escolha o serviço que melhor se adequa ao seu momento e comece sua jornada
       de clareza e liberdade.
     </h3>
@@ -88,18 +81,11 @@ const serviceList: ServiceProps[] = [
     <div class="grid sm:grid-cols-2 lg:grid-cols-2 gap-4 w-full lg:w-[80%] mx-auto">
       <div v-for="{ title, description, details, pro, link } in serviceList" :key="title">
         <Card
-          class="h-full relative flex flex-col cursor-pointer hover:shadow-lg transition-shadow border-2 hover:border-[#722a24]"
-          style="
-            background: linear-gradient(
-              135deg,
-              #ffffff 0%,
-              #f5f0eb 50%,
-              #e8ddd4 100%
-            );
-          " @click="handleCardClick(link)">
+          class="h-full relative flex flex-col cursor-pointer hover:shadow-lg transition-shadow border-2 border-teal/15 hover:border-wine/60 bg-background/80 backdrop-blur-sm"
+          @click="handleCardClick(link)">
           <CardHeader>
-            <CardTitle style="color: #000000">{{ title }}</CardTitle>
-            <CardDescription style="color: #2d1210">{{
+            <CardTitle>{{ title }}</CardTitle>
+            <CardDescription>{{
               description
             }}</CardDescription>
             <p class="text-sm text-primary font-semibold whitespace-pre-line mt-2">{{ details }}</p>
@@ -110,18 +96,7 @@ const serviceList: ServiceProps[] = [
     </div>
 
     <div class="flex justify-center mt-8">
-      <Button class="font-bold" style="
-          background: linear-gradient(
-            135deg,
-            #722a24 0%,
-            #8b3d35 40%,
-            #a85547 80%,
-            #c97d6f 100%
-          );
-          color: #ffffff;
-          border: none;
-          box-shadow: 0 4px 15px rgba(114, 42, 36, 0.3);
-        " @click="handleServiceClick">
+      <Button class="font-bold" @click="handleServiceClick">
         Quero sanar minhas dúvidas
       </Button>
     </div>

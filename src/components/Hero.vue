@@ -4,16 +4,7 @@ import { Button } from "@/components/ui/button";
 </script>
 
 <template>
-  <section class="container" id="home" style="
-      background: linear-gradient(
-        180deg,
-        #ffffff 0%,
-        #f5f0eb 25%,
-        #e8ddd4 50%,
-        #d1c5ba 75%,
-        #c4b5a8 100%
-      );
-    ">
+  <section class="container" id="home">
     <div class="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-10 md:py-24">
       <div class="text-center space-y-8">
         <Badge variant="outline" class="text-sm py-2">
@@ -31,10 +22,9 @@ import { Button } from "@/components/ui/button";
             <span class="text-transparent bg-clip-text" style="
                 background: linear-gradient(
                   135deg,
-                  #722a24 0%,
-                  #8b3d35 40%,
-                  #a85547 70%,
-                  #c97d6f 100%
+                  rgb(var(--wine-rgb)) 0%,
+                  rgb(var(--cta-rgb)) 52%,
+                  rgb(var(--teal-rgb)) 100%
                 );
                 -webkit-background-clip: text;
                 background-clip: text;
@@ -42,7 +32,7 @@ import { Button } from "@/components/ui/button";
           </h1>
         </div>
 
-        <p class="max-w-screen-sm mx-auto text-xl text-foreground" style="color: #2d1210">
+        <p class="max-w-screen-sm mx-auto text-xl text-foreground">
           Astrologia aplicada + acompanhamento estratégico para mulheres que precisam tomar decisões profissionais com
           clareza, direção e no timing certo.
         </p>

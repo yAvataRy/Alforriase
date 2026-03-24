@@ -48,15 +48,7 @@ const iconMap: Record<
 </script>
 
 <template>
-  <section id="alforriase" class="container py-24 sm:py-32" style="
-      background: linear-gradient(
-        180deg,
-        #c4b5a8 0%,
-        /* Bege Escuro (Conexão) */ #b28a82 30%,
-        /* Transição suave */ #9c5b5e 60%,
-        /* Transição suave */ #862d3b 100% /* Seu Vermelho */
-      );
-    ">
+  <section id="alforriase" class="container py-24 sm:py-32">
     <div class="grid lg:grid-cols-2 place-items-center lg:gap-24">
       <div>
         <h2 class="text-lg text-primary mb-2 tracking-wider" style="font-family: 'Playfair Display', serif">
@@ -66,43 +58,36 @@ const iconMap: Record<
         <h2 class="text-3xl md:text-4xl font-bold mb-4" style="font-family: 'Playfair Display', serif">
           Minha História
         </h2>
-        <p class="text-xl text-foreground mb-8" style="color: #f5f0eb">
+        <p class="text-xl text-foreground mb-8">
           Meu trabalho nasceu do desejo de ajudar mulheres a saírem do automático profissional.
         </p>
 
-        <p class="text-xl text-foreground mb-8" style="color: #f5f0eb">
+        <p class="text-xl text-foreground mb-8">
           Eu <span class="italic">não</span> uso astrologia para prever.<br>
           Eu uso astrologia para <span class="font-semibold">organizar decisões</span>.
         </p>
 
-        <p class="text-xl text-foreground mb-4" style="color: #f5f0eb">
+        <p class="text-xl text-foreground mb-4">
           Aqui, o mapa deixa de ser algo abstrato e se transforma em estratégia:
         </p>
 
-        <ul class="text-xl text-foreground space-y-2 mb-8" style="color: #f5f0eb">
+        <ul class="text-xl text-foreground space-y-2 mb-8">
           <li>• entender seu momento</li>
           <li>• identificar prioridades</li>
           <li>• agir no tempo certo</li>
           <li>• evitar decisões impulsivas</li>
         </ul>
-        <p class="text-lg text-foreground" style="color: #f5f0eb">
+        <p class="text-lg text-foreground">
           <strong>Método:</strong> Astrologia aplicada + planejamento estratégico anual.
         </p>
-        <p class="text-lg text-foreground" style="color: #f5f0eb">
+        <p class="text-lg text-foreground">
           <strong>Foco:</strong> Carreira, trabalho e decisões importantes.
         </p>
       </div>
 
       <div class="grid lg:grid-cols-2 gap-4 w-full">
         <Card v-for="{ icon, title, description } in benefitList" :key="title"
-          class="hover:shadow-lg transition-all delay-75 group/number border-2 hover:border-[#722a24]" style="
-            background: linear-gradient(
-              135deg,
-              #ffffff 0%,
-              #f5f0eb 50%,
-              #e8ddd4 100%
-            );
-          ">
+          class="hover:shadow-lg transition-all delay-75 group/number border-2 border-teal/15 hover:border-wine/60 bg-background/80 backdrop-blur-sm">
           <CardHeader>
             <div class="flex justify-between">
               <component class="size-8 text-primary mr-4" :is="iconMap[icon]" />
@@ -110,7 +95,7 @@ const iconMap: Record<
             </div>
           </CardHeader>
 
-          <CardContent class="text-foreground whitespace-pre-line" style="color: #2d1210">
+          <CardContent class="text-foreground whitespace-pre-line">
             {{ description }}
           </CardContent>
         </Card>

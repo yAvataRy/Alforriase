@@ -59,15 +59,7 @@ const teamList: TeamProps[] = [
         #c4b5a8 100%
       );
     "> QUANDO VOLTAR O INSTAGRAM FEED USAR ESSE BACKGROUND  ACIMA-->
-  <section id="camila" class="container py-24 sm:py-32" style="
-      background: linear-gradient(
-        180deg,
-        #862d3b 0%,
-        /* Topo: Seu Vermelho */ #a56a65 35%,
-        /* Meio: Marrom rosado */ #b99086 70%,
-        /* Meio: Bege rosado */ #c4b5a8 100% /* Base: Bege Escuro */
-      );
-    ">
+  <section id="camila" class="container py-24 sm:py-32">
     <div class="text-center mb-8">
       <!-- <h2
         class="text-lg text-primary text-center mb-2 tracking-wider"
@@ -89,15 +81,7 @@ const teamList: TeamProps[] = [
         description,
         // socialNetworks,
       } in teamList" :key="imageUrl"
-        class="flex flex-col h-full overflow-hidden group/hoverimg border-2 hover:border-[#722a24] transition-all"
-        style="
-          background: linear-gradient(
-            135deg,
-            #ffffff 0%,
-            #f5f0eb 50%,
-            #e8ddd4 100%
-          );
-        ">
+        class="flex flex-col h-full overflow-hidden group/hoverimg border-2 border-teal/15 hover:border-wine/60 transition-all bg-background/80 backdrop-blur-sm">
         <CardHeader class="p-0 gap-0">
           <div class="h-full overflow-hidden">
             <img :src="imageUrl" :alt="name"
@@ -108,7 +92,7 @@ const teamList: TeamProps[] = [
           </CardTitle>
         </CardHeader>
 
-        <CardContent class="text-foreground pb-4" style="color: #2d1210">
+        <CardContent class="text-foreground pb-4">
           {{ description }}
         </CardContent>
 

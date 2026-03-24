@@ -28,6 +28,9 @@ module.exports = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        wine: "rgb(var(--wine-rgb) / <alpha-value>)",
+        teal: "rgb(var(--teal-rgb) / <alpha-value>)",
+        cta: "rgb(var(--cta-rgb) / <alpha-value>)",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",

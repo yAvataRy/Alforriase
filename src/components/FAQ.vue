@@ -45,10 +45,9 @@ const FAQList: FAQProps[] = [
         style="
           background: linear-gradient(
             135deg,
-            #722a24 0%,
-            #8b3d35 40%,
-            #a85547 80%,
-            #c97d6f 100%
+            rgb(var(--wine-rgb)) 0%,
+            rgb(var(--cta-rgb)) 45%,
+            rgb(var(--teal-rgb)) 100%
           );
 
           background-clip: text;
@@ -67,11 +66,11 @@ const FAQList: FAQProps[] = [
         :key="value"
         :value="value"
       >
-        <AccordionTrigger class="text-left" style="color: #62120a !important">
+        <AccordionTrigger class="text-left text-wine">
           {{ question }}
         </AccordionTrigger>
 
-        <AccordionContent class="!text-[#62120a] !text-sm">{{
+        <AccordionContent class="!text-wine !text-sm">{{
           answer
         }}</AccordionContent>
       </AccordionItem>
@@ -84,8 +83,7 @@ const FAQList: FAQProps[] = [
           href="https://api.whatsapp.com/send?phone=5511951366861&text=Ol%C3%A1,%20ainda%20tenho%20d%C3%BAvidas."
           target="_blank"
           rel="noopener noreferrer"
-          class="underline"
-          style="color: #2d1210"
+          class="underline text-wine hover:text-cta"
           >Entre em contato</a
         >
       </a>

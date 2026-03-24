@@ -1,11 +1,10 @@
 <script setup lang="ts">
-import { Sparkles } from "lucide-vue-next";
 import Separator from "./ui/separator/Separator.vue";
 </script>
 
 <template>
   <footer id="footer" class="container py-3 pb-4 sm:py-4 sm:pb-6">
-    <div class="p-10 bg-muted/50 dark:bg-card border rounded-2xl">
+    <div class="p-10 bg-teal text-secondary-foreground border border-teal/20 rounded-2xl">
       <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
         <div class="col-span-full xl:col-span-2">
           <!-- <a href="#home" class="flex font-bold items-center">
@@ -16,7 +15,7 @@ import Separator from "./ui/separator/Separator.vue";
               Camila, Sua Astróloga
             </h3> 
           </a>-->
-          <p class="text-sm text-foreground mt-2" style="color: #2d1210">
+          <p class="text-sm mt-2 text-secondary-foreground/90">
             Astrologia aplicada para mulheres que querem direção e liberdade.
           </p>
         </div>
@@ -51,64 +50,64 @@ import Separator from "./ui/separator/Separator.vue";
           </div>
         </div> -->
 
-        <div class="flex flex-col gap-2 color2d1210">
+        <div class="flex flex-col gap-2">
           <h3 class="font-bold text-lg">Experiências</h3>
           <div>
             <a href="https://payfast.greenn.com.br/84569" target="_blank" rel="noopener noreferrer"
-              class="opacity-80 hover:opacity-100">
+              class="opacity-90 hover:opacity-100">
               Jornada Solar
             </a>
           </div>
 
           <div>
             <a href="https://payfast.greenn.com.br/84552" target="_blank" rel="noopener noreferrer"
-              class="opacity-80 hover:opacity-100">
+              class="opacity-90 hover:opacity-100">
               Leitura de Mapa Astral
             </a>
           </div>
 
           <div>
             <a href="https://payfast.greenn.com.br/84572/offer/xAcMsw" target="_blank" rel="noopener noreferrer"
-              class="opacity-80 hover:opacity-100">
+              class="opacity-90 hover:opacity-100">
               Astro Express
             </a>
           </div>
 
           <div>
             <a href="https://payfast.greenn.com.br/116808/offer/Cmw5Od" target="_blank" rel="noopener noreferrer"
-              class="opacity-80 hover:opacity-100">
+              class="opacity-90 hover:opacity-100">
               Jornada Solar Pocket
             </a>
           </div>
         </div>
 
-        <div class="flex flex-col gap-2 color2d1210">
+        <div class="flex flex-col gap-2">
           <h3 class="font-bold text-lg">Contato</h3>
           <div>
-            <a href="#contato" class="opacity-80 hover:opacity-100">
+            <a href="#contato" class="opacity-90 hover:opacity-100">
               Formulário
             </a>
           </div>
 
           <div>
             <a href="https://api.whatsapp.com/send?phone=5511951366861&text=Ol%C3%A1,%20vim%20pelo%20site."
-              target="_blank" rel="noopener noreferrer" class="opacity-80 hover:opacity-100">
+              target="_blank" rel="noopener noreferrer" class="opacity-90 hover:opacity-100">
               WhatsApp
             </a>
           </div>
 
           <div>
-            <a href="mailto:alforriase@outlook.com" class="opacity-80 hover:opacity-100">
+            <a href="mailto:camilasuaastrologa@outlook.com" class="opacity-90 hover:opacity-100">
               Email
             </a>
           </div>
         </div>
 
-        <div class="flex flex-col gap-2 color2d1210">
+        <div class="flex flex-col gap-2">
           <h3 class="font-bold text-lg">Redes Sociais</h3>
           <div>
             <a href="https://instagram.com/camila.suaastrologa" target="_blank" rel="noopener noreferrer"
-              class="opacity-80 hover:opacity-100">
+              class="opacity-90 hover:opacity-100">
               Instagram
             </a>
           </div>
@@ -130,7 +129,7 @@ import Separator from "./ui/separator/Separator.vue";
       <section class="">
         <div class="flex flex-col md:flex-row justify-between items-center gap-4">
           <h3 class="text-sm">&copy; 2026 Camila, Sua Astrologa.</h3>
-          <p class="text-sm text-foreground" style="color: #2d1210">
+          <p class="text-sm text-secondary-foreground/80">
             Desenvolvido por Bravva Glow - Agência de marketing digital e tech
           </p>
         </div>
@@ -138,10 +137,3 @@ import Separator from "./ui/separator/Separator.vue";
     </div>
   </footer>
 </template>
-
-<style scoped>
-.color2d1210 {
-  color: #2d1210 !important;
-  text-color: #2d1210 !important;
-}
-</style>

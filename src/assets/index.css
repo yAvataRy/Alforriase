@@ -76,37 +76,45 @@ html {
 /* *=========== Camila, Sua Astrologa theme (Bordô + Verde musgo) =========== */
 @layer base {
   :root {
-    --background: 35 25% 96%;
-    --foreground: 220 20% 15%;
+    /* Base (Off-white) + texto (grafite) */
+    --background: 48 24% 95%; /* #f6f5f0 */
+    --foreground: 0 0% 20%; /* #333333 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 20% 15%;
+    --card: 48 24% 97%;
+    --card-foreground: 0 0% 20%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 15%;
+    --popover: 48 24% 97%;
+    --popover-foreground: 0 0% 20%;
 
-    /* Bordô principal */
-    --primary: 350 50% 35%;
-    --primary-foreground: 35 25% 96%;
+    /* CTA (Laranja vibrante) */
+    --primary: 30 95% 50%; /* #f88308 */
+    --primary-foreground: 48 24% 95%; /* #f6f5f0 */
 
-    /* Verde musgo secundário */
-    --secondary: 100 15% 32%;
-    --secondary-foreground: 35 25% 96%;
+    /* Azul petróleo (header/rodapé/bordas sutis) */
+    --secondary: 197 91% 18%; /* #04425b */
+    --secondary-foreground: 48 24% 95%; /* #f6f5f0 */
 
     --muted: 35 25% 90%;
-    --muted-foreground: 220 10% 50%;
+    --muted-foreground: 0 0% 35%;
 
-    /* Accent em verde musgo */
-    --accent: 100 15% 32%;
-    --accent-foreground: 35 25% 96%;
+    --accent: 197 91% 18%;
+    --accent-foreground: 48 24% 95%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 35 25% 96%;
 
-    --border: 35 25% 85%;
-    --input: 35 25% 90%;
-    --ring: 350 50% 35%;
+    --border: 197 30% 80%;
+    --input: 197 25% 88%;
+    --ring: 30 95% 50%;
     --radius: 0.5rem;
+
+    /* Tokens RGB (para gradientes complexos com alpha) */
+    --wave-top-rgb: 51 51 51; /* #333333 */
+    --wave-mid-rgb: 246 245 240; /* #f6f5f0 */
+    --wave-bottom-rgb: 116 4 26; /* #74041a */
+    --teal-rgb: 4 66 91; /* #04425b */
+    --cta-rgb: 248 131 8; /* #f88308 */
+    --wine-rgb: 116 4 26; /* #74041a */
   }
 
   .dark {
@@ -146,17 +154,36 @@ html {
   }
   body {
     @apply text-foreground;
-    background: linear-gradient(
-      180deg,
-      #ffffff 0%,
-      #f5f0eb 15%,
-      #e8ddd4 30%,
-      #d1c5ba 50%,
-      #e8ddd4 70%,
-      #f5f0eb 85%,
-      #ffffff 100%
-    );
-    background-attachment: fixed;
+    background-color: hsl(var(--background));
+    background-image:
+      radial-gradient(1400px 520px at 50% -10%,
+        rgb(var(--wave-top-rgb) / 0.55) 0%,
+        rgb(var(--wave-top-rgb) / 0.10) 45%,
+        transparent 72%),
+      radial-gradient(1200px 460px at 12% 14%,
+        rgb(var(--wave-top-rgb) / 0.18) 0%,
+        transparent 60%),
+      radial-gradient(1100px 520px at 88% 28%,
+        rgb(var(--wave-top-rgb) / 0.12) 0%,
+        transparent 62%),
+      radial-gradient(1400px 640px at 50% 108%,
+        rgb(var(--wave-bottom-rgb) / 0.55) 0%,
+        rgb(var(--wave-bottom-rgb) / 0.12) 50%,
+        transparent 74%),
+      radial-gradient(1100px 520px at 18% 78%,
+        rgb(var(--wave-bottom-rgb) / 0.16) 0%,
+        transparent 62%),
+      radial-gradient(1200px 560px at 86% 86%,
+        rgb(var(--wave-bottom-rgb) / 0.12) 0%,
+        transparent 62%),
+      linear-gradient(
+        180deg,
+        rgb(var(--wave-top-rgb)) 0%,
+        rgb(var(--wave-mid-rgb)) 38%,
+        rgb(var(--wave-mid-rgb)) 62%,
+        rgb(var(--wave-bottom-rgb)) 100%
+      );
+    background-attachment: fixed, fixed, fixed, fixed, fixed, fixed, fixed;
     min-height: 100vh;
   }
 }
