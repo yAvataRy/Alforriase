@@ -26,7 +26,7 @@ interface ReviewProps {
 
 const reviewList: ReviewProps[] = [
   {
-    name: "Glaucia Égua",
+    name: "Glaucia Medeiros",
     result: "Liberdade",
     comment:
       "Meu mapa este ano só reforçou o que tinha dado nos anos anteriores. Tinha a informação mas não havia me posicionado. Foi preciso auxílio da minha astróloga para me dar clareza sobre os pontos que me travaram, com base nessas reflexões, entendi quais eram as crenças que me limitavam e como trabalhar na libertação desses pontos e, com isso planejar com base na astrologia os meus próximos passos.",
