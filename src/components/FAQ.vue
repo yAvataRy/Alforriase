@@ -78,14 +78,16 @@ const FAQList: FAQProps[] = [
 
     <h3 class="font-medium mt-4">
       Ainda tem dúvidas?
-      <a href="#" class="text-muted-foreground">
-        <a
-          href="https://api.whatsapp.com/send?phone=5511951366861&text=Ol%C3%A1,%20ainda%20tenho%20d%C3%BAvidas."
+      <a
+        href="https://api.whatsapp.com/send?phone=5511951366861&text=Ol%C3%A1,%20ainda%20tenho%20d%C3%BAvidas."
+        class="text-muted-foreground"
+      >
+        <span
           target="_blank"
           rel="noopener noreferrer"
           class="underline text-wine hover:text-cta"
-          >Entre em contato</a
-        >
+          >Entre em contato
+        </span>
       </a>
     </h3>
   </section>

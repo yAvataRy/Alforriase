@@ -40,7 +40,7 @@ const serviceList: ServiceProps[] = [
     details: "Planejamento anual baseado na sua Revolução Solar.",
     pro: 0,
     link: "https://link.infinitepay.io/alforriase/VC1D-7WlT9vwzjv-1500,00",
-    buttonText: "Jornada Solar",
+    buttonText: "Compre aqui - Jornada Solar",
   },
   {
     title: "Leitura de Mapa Astral",
@@ -49,7 +49,7 @@ const serviceList: ServiceProps[] = [
     details: "Análise profunda do seu mapa natal",
     pro: 0,
     link: "https://link.infinitepay.io/alforriase/VC1D-2Z92IavQp-404,00",
-    buttonText: "Leitura de Mapa Astral",
+    buttonText: "Compre aqui - Leitura de Mapa Astral",
   },
   {
     title: "Astro Express",
@@ -58,7 +58,7 @@ const serviceList: ServiceProps[] = [
     details: "Clareza em uma conversa focada.",
     pro: 0,
     link: "https://link.infinitepay.io/alforriase/VC1DLTAtUg-7U79M8hv2l-206,00",
-    buttonText: "Astro Express",
+    buttonText: "Compre aqui - Astro Express",
   },
   {
     title: "Jornada Solar Pocket",
@@ -67,7 +67,7 @@ const serviceList: ServiceProps[] = [
     details: "Ideal para quem quer direção sem acompanhamento completo.",
     pro: 0,
     link: "https://link.infinitepay.io/alforriase/VC1D-7S2J1WFmtp-701,00",
-    buttonText: "Jornada Solar Pocket",
+    buttonText: "Compre aqui - Jornada Solar Pocket",
   },
 ];
 </script>
@@ -100,7 +100,7 @@ const serviceList: ServiceProps[] = [
         :key="title"
       >
         <Card
-          class="h-full relative flex flex-col cursor-pointer hover:shadow-lg transition-shadow border-2 border-teal/15 hover:border-wine/60 bg-background/80 backdrop-blur-sm"
+          class="h-full relative flex flex-col hover:shadow-lg transition-shadow border-2 border-teal/15 hover:border-wine/60 bg-background/80 backdrop-blur-sm"
         >
           <CardHeader>
             <CardTitle>{{ title }}</CardTitle>
@@ -117,12 +117,14 @@ const serviceList: ServiceProps[] = [
             class="absolute -top-2 -right-3"
             >PRO</Badge
           >
-          <Button
-            class="font-bold my-2 mx-28 mt-auto"
-            @click="handleCardClick(link)"
-          >
-            {{ buttonText }}
-          </Button>
+          <div class="mt-auto w-full flex justify-center p-2">
+            <Button
+              class="font-bold w-full max-w-[300px]"
+              @click="handleCardClick(link)"
+            >
+              {{ buttonText }}
+            </Button>
+          </div>
         </Card>
       </div>
     </div>
