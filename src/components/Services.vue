@@ -20,6 +20,7 @@ interface ServiceProps {
   description: string;
   details: string;
   link: string;
+  buttonText: string;
 }
 
 const handleServiceClick = () => {
