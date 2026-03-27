@@ -38,7 +38,8 @@ const serviceList: ServiceProps[] = [
       "Acompanhamento estratégico anual para mulheres que querem organizar o ano profissional com clareza e direção. \n\n4 encontros ao longo do ano para: \n* definir prioridades \n* alinhar decisões \n* entender o timing certo \n* evitar retrabalho e desgaste",
     details: "Planejamento anual baseado na sua Revolução Solar.",
     pro: 0,
-    link: "https://payfast.greenn.com.br/84569",
+    link: "https://link.infinitepay.io/alforriase/VC1D-7WlT9vwzjv-1500,00",
+    buttonText: "Jornada Solar",
   },
   {
     title: "Leitura de Mapa Astral",
@@ -46,7 +47,8 @@ const serviceList: ServiceProps[] = [
       "Uma análise estratégica do seu mapa natal com foco em carreira, talentos e potencial de crescimento. \n\nIdeal para quem quer: \n* entender sua força profissional \n* reconhecer padrões que travam decisões \n* ganhar direção antes de agir",
     details: "Análise profunda do seu mapa natal",
     pro: 0,
-    link: "https://payfast.greenn.com.br/84552",
+    link: "https://link.infinitepay.io/alforriase/VC1D-2Z92IavQp-404,00",
+    buttonText: "Leitura de Mapa Astral",
   },
   {
     title: "Astro Express",
@@ -54,7 +56,8 @@ const serviceList: ServiceProps[] = [
       "Sessão rápida e objetiva para decisões pontuais. \n\nVocê traz uma questão específica. \nEu te ajudo a enxergar cenário, timing e próximos passos.",
     details: "Clareza em uma conversa focada.",
     pro: 0,
-    link: "https://payfast.greenn.com.br/84572/offer/xAcMsw",
+    link: "https://link.infinitepay.io/alforriase/VC1DLTAtUg-7U79M8hv2l-206,00",
+    buttonText: "Astro Express",
   },
   {
     title: "Jornada Solar Pocket",
@@ -62,7 +65,8 @@ const serviceList: ServiceProps[] = [
       "Panorama estratégico do seu novo ciclo anual. \n\nResumo claro do seu ano profissional: \n* temas centrais \n* prioridades \n* oportunidades \n* pontos de atenção",
     details: "Ideal para quem quer direção sem acompanhamento completo.",
     pro: 0,
-    link: "https://payfast.greenn.com.br/116808/offer/Cmw5Od",
+    link: "https://link.infinitepay.io/alforriase/VC1D-7S2J1WFmtp-701,00",
+    buttonText: "Jornada Solar Pocket",
   },
 ];
 </script>
@@ -84,12 +88,18 @@ const serviceList: ServiceProps[] = [
       class="grid sm:grid-cols-2 lg:grid-cols-2 gap-4 w-full lg:w-[80%] mx-auto"
     >
       <div
-        v-for="{ title, description, details, pro, link } in serviceList"
+        v-for="{
+          title,
+          description,
+          details,
+          pro,
+          link,
+          buttonText,
+        } in serviceList"
         :key="title"
       >
         <Card
           class="h-full relative flex flex-col cursor-pointer hover:shadow-lg transition-shadow border-2 border-teal/15 hover:border-wine/60 bg-background/80 backdrop-blur-sm"
-          @click="handleCardClick(link)"
         >
           <CardHeader>
             <CardTitle>{{ title }}</CardTitle>
@@ -106,6 +116,12 @@ const serviceList: ServiceProps[] = [
             class="absolute -top-2 -right-3"
             >PRO</Badge
           >
+          <Button
+            class="font-bold my-2 mx-28 mt-auto"
+            @click="handleCardClick(link)"
+          >
+            {{ buttonText }}
+          </Button>
         </Card>
       </div>
     </div>
